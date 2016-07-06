@@ -4,7 +4,7 @@ package chat;
 import java.io.IOException;
 
 /**
- * Version 0.4
+ * Version 0.5
  * @author htha9587
  * 7-5-16
  */
@@ -12,6 +12,7 @@ import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -27,6 +28,9 @@ public class ChatbotRunner extends Application
 	{	
 		this.primaryStage = primaryStage;
 		this.primaryStage.setTitle("ChatbotFX");
+		
+		//Sets Application Icon.
+		this.primaryStage.getIcons().add(new Image("file:resources/images/HAL.png"));
 		
 		initRootLayout();
 	}
