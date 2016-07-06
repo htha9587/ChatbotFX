@@ -2,5 +2,9 @@
 	-fx-background-image: url("http://static1.squarespace.com/static/55f7fa0ee4b0e95732736461/t/55f803d3e4b0e6fba5d296b1/1442397676270/?format=1500w");
 	-fx-background-repeat: stretch;
 	-fx-background-position: center center;
-	
+}
+  .tool-bar {
+   -fx-base: rgb(50, 50, 50);
+   -fx-background: rgb(50, 50, 50);
+   -fx-control-inner-background: rgb(50, 50, 50);
 }
