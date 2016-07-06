@@ -4,7 +4,7 @@ package chat;
 import java.io.IOException;
 
 /**
- * Version 0.2
+ * Version 0.3
  * @author htha9587
  * 7-5-16
  */
