@@ -11,5 +11,13 @@
    -fx-padding: 0 5.417em 0 0;
 }
 
+.text-area {
+  -fx-font-family: Consolas;
+  -fx-highlight-fill: #00ff00;
+  -fx-highlight-text-fill: #000000;
+  -fx-text-fill: #00ff00;
+}
 
-
+.text-area .content {
+	-fx-background-color: black;
+}

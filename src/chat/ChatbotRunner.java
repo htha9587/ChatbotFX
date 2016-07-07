@@ -4,9 +4,9 @@ package chat;
 import java.io.IOException;
 
 /**
- * Version 0.6
+ * Version 0.7
  * @author htha9587
- * 7-5-16
+ * 7-7-16
  */
 
 import javafx.application.Application;
