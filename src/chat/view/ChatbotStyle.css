@@ -4,7 +4,12 @@
 	-fx-background-position: center center;
 }
   .tool-bar {
+   -fx-alignment: CENTER;
    -fx-base: rgb(50, 50, 50);
    -fx-background: rgb(50, 50, 50);
    -fx-control-inner-background: rgb(50, 50, 50);
+   -fx-padding: 0 5.417em 0 0;
 }
+
+
+
