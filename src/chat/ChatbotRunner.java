@@ -2,9 +2,10 @@ package chat;
 
 
 import java.io.IOException;
+import java.util.Optional;
 
 /**
- * Version 0.7
+ * Version 0.8
  * @author htha9587
  * 7-7-16
  */
@@ -12,7 +13,9 @@ import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.TextInputDialog;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -26,6 +29,22 @@ public class ChatbotRunner extends Application
 	@Override
 	public void start(Stage primaryStage) 
 	{	
+		//Sets up dialog before main application.
+		TextInputDialog dialog = new TextInputDialog("Harrison");
+		dialog.setTitle("ChatbotFX");
+		dialog.setHeaderText("This message brought to you by ChatbotFX.");
+		dialog.setContentText("What's your name?");
+		Stage stage = (Stage) dialog.getDialogPane().getScene().getWindow();
+		stage.getIcons().add(new Image("file:resources/images/HAL.png"));
+		dialog.setGraphic(new ImageView("file:resources/images/HAL.png"));
+		//Retrieves response value.
+		Optional<String> result = dialog.showAndWait();
+		if (result.isPresent())
+		{
+			dialog.setResult("Hello " + result.get());
+		}
+		
+		//Sets main stage and scene.
 		this.primaryStage = primaryStage;
 		this.primaryStage.setTitle("ChatbotFX");
 		
