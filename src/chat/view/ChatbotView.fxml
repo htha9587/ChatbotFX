@@ -8,27 +8,27 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="706.0" stylesheets="@ChatbotStyle.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="706.0" stylesheets="@ChatbotStyle.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat.view.ChatbotViewController">
    <top>
       <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="spacer" stylesheets="@ChatbotStyle.css" BorderPane.alignment="CENTER">
         <items>
-            <Button mnemonicParsing="false" text="Calendar">
+            <Button fx:id="calendarButton" mnemonicParsing="false" text="Calendar">
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" text="Topic List">
+            <Button fx:id="topicListButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="93.0" text="Topic List">
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <TextField prefHeight="30.0" prefWidth="283.0">
+            <TextField fx:id="chatField" prefHeight="30.0" prefWidth="283.0">
                <font>
                   <Font size="14.0" />
                </font></TextField>
-            <Button mnemonicParsing="false" text="Chatbot's Button">
+            <Button fx:id="chatButton" mnemonicParsing="false" text="Chatbot's Button">
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button mnemonicParsing="false" text="Quit" textAlignment="JUSTIFY">
+            <Button fx:id="quitButton" mnemonicParsing="false" text="Quit" textAlignment="JUSTIFY">
                <font>
                   <Font size="14.0" />
                </font></Button>
@@ -38,27 +38,27 @@
    <bottom>
       <ToolBar prefHeight="40.0" prefWidth="699.0" BorderPane.alignment="CENTER">
         <items>
-          <Button mnemonicParsing="false" text="Map">
+          <Button fx:id="mapButton" mnemonicParsing="false" text="Map">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" text="Load from File">
+            <Button fx:id="loadButton" mnemonicParsing="false" text="Load from File">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" text="Save to File">
+            <Button fx:id="saveButton" mnemonicParsing="false" text="Save to File">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" text="Send Tweet">
+            <Button fx:id="sendButton" mnemonicParsing="false" text="Send Tweet">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" text="Search Twitter">
+            <Button fx:id="searchButton" mnemonicParsing="false" text="Search Twitter">
                <font>
                   <Font size="14.0" />
                </font>
@@ -70,6 +70,6 @@
       </ToolBar>
    </bottom>
    <right>
-      <TextArea maxHeight="537.0" prefHeight="520.0" prefWidth="208.0" styleClass="text-area" BorderPane.alignment="CENTER" />
+      <TextArea fx:id="chatArea" maxHeight="537.0" prefHeight="520.0" prefWidth="208.0" styleClass="text-area" BorderPane.alignment="CENTER" />
    </right>
 </BorderPane>

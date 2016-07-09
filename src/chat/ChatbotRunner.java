@@ -5,9 +5,9 @@ import java.io.IOException;
 import java.util.Optional;
 
 /**
- * Version 0.9
+ * Version 1.0
  * @author htha9587
- * 7-8-16
+ * 7-9-16
  */
 
 import javafx.application.Application;
