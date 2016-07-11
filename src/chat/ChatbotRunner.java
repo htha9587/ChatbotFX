@@ -4,6 +4,8 @@ package chat;
 import java.io.IOException;
 import java.util.Optional;
 
+import chat.view.ChatbotViewController;
+
 /**
  * Version 1.0
  * @author htha9587
@@ -59,7 +61,10 @@ public class ChatbotRunner extends Application
             // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader(ChatbotRunner.class.getResource("view/ChatbotView.fxml"));
             rootLayout = (BorderPane) loader.load();
-
+            //Gives Controller reference to main class.
+            ChatbotViewController controller = loader.getController();
+            controller.setChatbotRunner(this);
+            
             // Show the scene containing the root layout.
             Scene scene = new Scene(rootLayout);
             primaryStage.setScene(scene);

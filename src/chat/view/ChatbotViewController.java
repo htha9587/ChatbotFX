@@ -1,19 +1,31 @@
 package chat.view;
 
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 import chat.ChatbotRunner;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
+import javafx.stage.Stage;
 
 /**
- * Version 1.1
+ * Version 1.2
  * @author htha9587
  * 7-11-16
  */
 
 public class ChatbotViewController 
 {
+	@FXML
+	private WebView webView;
 	@FXML
 	private TextField chatField;
 	@FXML
@@ -37,6 +49,7 @@ public class ChatbotViewController
 	@FXML
 	private Button searchButton;
 	
+	private WebEngine engine;
 	
 	//Reference to main application.
 	private ChatbotRunner chatbotRunner;
@@ -49,10 +62,10 @@ public class ChatbotViewController
 		
 	}
 	
-	@FXML
-	private void initialize()
+	public void initialize(URL location, ResourceBundle resources)
 	{
-		
+		engine = webView.getEngine();
+		engine.setJavaScriptEnabled(true);
 	}
 	
 	
@@ -62,6 +75,24 @@ public class ChatbotViewController
 	}
 	
 	
+	@FXML
+	private void handleMapButton(ActionEvent event)
+	{
+		try
+		{
+		Stage webView = new Stage();
+		
+	   Parent root = FXMLLoader.load(getClass().getResource("view/ChatbotMap.fxml"));
+	   
+	   Scene scene = new Scene(root);
+	   webView.setScene(scene);
+	   
+		engine.load("https://www.google.com/maps");
+		}
+	catch(IOException e)
+	{
+		e.printStackTrace();
+	}
 	
-	
+}
 }
