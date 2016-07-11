@@ -7,9 +7,9 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 /**
- * Version 1.0
+ * Version 1.1
  * @author htha9587
- * 7-9-16
+ * 7-11-16
  */
 
 public class ChatbotViewController 
@@ -49,11 +49,17 @@ public class ChatbotViewController
 		
 	}
 	
+	@FXML
+	private void initialize()
+	{
+		
+	}
 	
 	
-	
-	
-	
+	public void setChatbotRunner(ChatbotRunner chatbotRunner)
+	{
+		this.chatbotRunner = chatbotRunner;
+	}
 	
 	
 	
