@@ -7,17 +7,18 @@ import chat.ChatbotRunner;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 /**
- * Version 1.2
+ * Version 1.3
  * @author htha9587
  * 7-11-16
  */
@@ -50,6 +51,7 @@ public class ChatbotViewController
 	private Button searchButton;
 	
 	private WebEngine engine;
+	private AnchorPane rootLayout;
 	
 	//Reference to main application.
 	private ChatbotRunner chatbotRunner;
@@ -80,13 +82,15 @@ public class ChatbotViewController
 	{
 		try
 		{
+			//Loads FXML file.
+		FXMLLoader loader = new FXMLLoader(ChatbotRunner.class.getResource("view/ChatbotMap.fxml"));
+		rootLayout = (AnchorPane) loader.load();
+		Scene scene = new Scene(rootLayout);
 		Stage webView = new Stage();
-		
-	   Parent root = FXMLLoader.load(getClass().getResource("view/ChatbotMap.fxml"));
-	   
-	   Scene scene = new Scene(root);
-	   webView.setScene(scene);
-	   
+		webView.setScene(scene);
+		webView.setTitle("Can you find yourself here?"); //Sets title.
+		webView.getIcons().add(new Image("file:resources/images/HAL.png")); //Sets Icon on the top of the window.
+	     webView.show();
 		engine.load("https://www.google.com/maps");
 		}
 	catch(IOException e)
