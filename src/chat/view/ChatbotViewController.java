@@ -8,19 +8,22 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 /**
- * Version 1.3
+ * Version 1.4
  * @author htha9587
- * 7-11-16
+ * 7-12-16
  */
 
 public class ChatbotViewController 
@@ -66,8 +69,9 @@ public class ChatbotViewController
 	
 	public void initialize(URL location, ResourceBundle resources)
 	{
-		engine = webView.getEngine();
-		engine.setJavaScriptEnabled(true);
+	engine = webView.getEngine();
+	engine.setJavaScriptEnabled(true);
+	engine.load("https://www.google.com/maps");
 	}
 	
 	
@@ -76,6 +80,20 @@ public class ChatbotViewController
 		this.chatbotRunner = chatbotRunner;
 	}
 	
+	@FXML
+	private void handleQuitButton(ActionEvent event)
+	{
+		Alert alert = new Alert(AlertType.INFORMATION);
+		alert.setTitle("Goodbye!");
+		alert.setHeaderText(null);
+		alert.setContentText("It has been a pleasure talking with you!");
+		alert.setGraphic(new ImageView("file:resources/images/HAL.png"));
+		//Gets the stage.
+		//Stage stage = (Stage) dialog.getDialogPane
+		
+		alert.showAndWait();
+		System.exit(0); //Closes the application.
+	}
 	
 	@FXML
 	private void handleMapButton(ActionEvent event)
@@ -90,13 +108,13 @@ public class ChatbotViewController
 		webView.setScene(scene);
 		webView.setTitle("Can you find yourself here?"); //Sets title.
 		webView.getIcons().add(new Image("file:resources/images/HAL.png")); //Sets Icon on the top of the window.
-	     webView.show();
+	    webView.show();
 		engine.load("https://www.google.com/maps");
 		}
 	catch(IOException e)
 	{
 		e.printStackTrace();
 	}
-	
+		
 }
 }

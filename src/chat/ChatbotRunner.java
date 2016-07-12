@@ -7,9 +7,9 @@ import java.util.Optional;
 import chat.view.ChatbotViewController;
 
 /**
- * Version 1.0
+ * Version 1.4
  * @author htha9587
- * 7-9-16
+ * 7-12-16
  */
 
 import javafx.application.Application;

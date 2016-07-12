@@ -28,7 +28,7 @@
                <font>
                   <Font size="14.0" />
                </font></Button>
-            <Button fx:id="quitButton" mnemonicParsing="false" text="Quit" textAlignment="JUSTIFY">
+            <Button fx:id="quitButton" mnemonicParsing="false" onAction="#handleQuitButton" text="Quit" textAlignment="JUSTIFY">
                <font>
                   <Font size="14.0" />
                </font></Button>
