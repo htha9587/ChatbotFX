@@ -21,7 +21,7 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 /**
- * Version 1.4
+ * Version 1.5
  * @author htha9587
  * 7-12-16
  */
@@ -89,7 +89,8 @@ public class ChatbotViewController
 		alert.setContentText("It has been a pleasure talking with you!");
 		alert.setGraphic(new ImageView("file:resources/images/HAL.png"));
 		//Gets the stage.
-		//Stage stage = (Stage) dialog.getDialogPane
+		Stage stage1 = (Stage) alert.getDialogPane().getScene().getWindow();
+		stage1.getIcons().add(new Image("file:resources/images/HAL.png"));
 		
 		alert.showAndWait();
 		System.exit(0); //Closes the application.
