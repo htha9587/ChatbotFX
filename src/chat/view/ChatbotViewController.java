@@ -3,6 +3,9 @@ package chat.view;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import com.calendarfx.view.CalendarView;
+
 import chat.ChatbotRunner;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -17,14 +20,15 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 /**
- * Version 1.6
+ * Version 1.7
  * @author htha9587
- * 7-12-16
+ * 7-13-16
  */
 
 public class ChatbotViewController 
@@ -56,6 +60,7 @@ public class ChatbotViewController
 	
 	private WebEngine engine;
 	private AnchorPane rootLayout;
+	private BorderPane rootLayout2;
 	
 	//Reference to main application.
 	private ChatbotRunner chatbotRunner;
@@ -96,6 +101,26 @@ public class ChatbotViewController
 		System.exit(0); //Closes the application.
 	}
 	
+	@FXML
+	private void handleCalendarButton(ActionEvent event)
+	{
+		CalendarView calendarView = new CalendarView();
+		//Loads FXML file.
+		FXMLLoader loader1 = new FXMLLoader(ChatbotRunner.class.getResource("view/ChatbotCalendar.fxml"));
+		try {
+			rootLayout2 = (BorderPane) loader1.load();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Scene scene = new Scene(rootLayout);
+		Stage calendarView1 = new Stage();
+		calendarView1.setScene(scene);
+		calendarView1.setTitle("Have anything planned?"); //Sets title.
+		calendarView1.getIcons().add(new Image("file:resources/images/HAL.png")); //Sets Icon on the top of the window.
+		calendarView1.show();
+	}
+
 	@FXML
 	private void handleMapButton(ActionEvent event)
 	{

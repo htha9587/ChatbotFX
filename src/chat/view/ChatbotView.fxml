@@ -12,7 +12,7 @@
    <top>
       <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="spacer" stylesheets="@ChatbotStyle.css" BorderPane.alignment="CENTER">
         <items>
-            <Button fx:id="calendarButton" mnemonicParsing="false" text="Calendar">
+            <Button fx:id="calendarButton" mnemonicParsing="false" onAction="#handleCalendarButton" text="Calendar">
                <font>
                   <Font size="14.0" />
                </font></Button>
