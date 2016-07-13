@@ -7,6 +7,7 @@ import chat.ChatbotRunner;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -21,7 +22,7 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 /**
- * Version 1.5
+ * Version 1.6
  * @author htha9587
  * 7-12-16
  */
@@ -91,7 +92,6 @@ public class ChatbotViewController
 		//Gets the stage.
 		Stage stage1 = (Stage) alert.getDialogPane().getScene().getWindow();
 		stage1.getIcons().add(new Image("file:resources/images/HAL.png"));
-		
 		alert.showAndWait();
 		System.exit(0); //Closes the application.
 	}
@@ -110,7 +110,6 @@ public class ChatbotViewController
 		webView.setTitle("Can you find yourself here?"); //Sets title.
 		webView.getIcons().add(new Image("file:resources/images/HAL.png")); //Sets Icon on the top of the window.
 	    webView.show();
-		engine.load("https://www.google.com/maps");
 		}
 	catch(IOException e)
 	{
