@@ -26,9 +26,9 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 /**
- * Version 1.8
+ * Version 1.9
  * @author htha9587
- * 7-13-16
+ * 7-14-16
  */
 
 public class ChatbotViewController 
@@ -89,6 +89,7 @@ public class ChatbotViewController
 	@FXML
 	private void handleQuitButton(ActionEvent event)
 	{
+		//Sets up quit dialog.
 		Alert alert = new Alert(AlertType.INFORMATION);
 		alert.setTitle("Goodbye!");
 		alert.setHeaderText(null);

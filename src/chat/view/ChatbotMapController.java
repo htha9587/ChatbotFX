@@ -8,9 +8,9 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
 /**
- * Version 1.8
+ * Version 1.9
  * @author htha9587
- * 7-13-16
+ * 7-14-16
  */
 
 
@@ -25,7 +25,9 @@ public class ChatbotMapController implements Initializable
 	{
 		
 	}
-	
+	/**
+	 * Initializes the new FXML file.
+	 */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
 	{
