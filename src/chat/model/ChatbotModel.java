@@ -3,7 +3,7 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 2.8
+ * Version 2.9
  * @author htha9587
  * 7-15-16
  * Makes up the Framework for the ChatbotFX program.
@@ -33,14 +33,26 @@ public class ChatbotModel
 		buildPoliticalList();
 	}
 
-
+/**
+ * Lists ten events in the political list.
+ */
 	private void buildPoliticalList() 
 	{
-		
-		
+		this.politicalList.add("Trump");
+		this.politicalList.add("Clinton");
+		this.politicalList.add("Scott Walker");
+		this.politicalList.add("Biden");
+		this.politicalList.add("Carson");
+		this.politicalList.add("Rubio");
+		this.politicalList.add("Fiorina");
+		this.politicalList.add("Sanders");
+		this.politicalList.add("vote");
+		this.politicalList.add("11/4/16");
 	}
 
-
+/**
+ * :Lists ten events in the software list.
+ */
 	private void buildSoftwareList() 
 	{
 		this.softwareList.add("Spring Framework");
@@ -53,7 +65,39 @@ public class ChatbotModel
 		this.softwareList.add("Machine Learning");
 		this.softwareList.add("Unit Testing");
 		this.softwareList.add("DevOps");
-		
 	}
 	
+	/**
+	 * Checks String length, returns false if String is empty or null.
+	 * @return Whether it matches the content area.
+	 */
+	public boolean lengthChecker(String currentInput)
+	{
+		boolean hasLength = false;
+		
+		if(currentInput != null)
+		{
+			if(currentInput.length() >= 1)
+			{
+				hasLength = true;
+			}
+		}
+		return hasLength;
+	}
+	/**
+	 * Checks if content is existent or nonexistent.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean contentChecker(String currentInput)
+	{
+		boolean hasContent = false;
+		
+		if(currentInput.toLowerCase().contains(content.toLowerCase()))
+			{
+			hasContent = true;
+			}
+			return hasContent;		
+	}
+			
 }
