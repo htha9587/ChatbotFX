@@ -3,7 +3,7 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 3.0
+ * Version 3.1
  * @author htha9587
  * 7-15-16
  * Makes up the Framework for the ChatbotFX program.
@@ -147,7 +147,69 @@ public class ChatbotModel
 		return isMash;
 	}
 	
+	/**
+	 * Processes conversation between end user and ChatbotFX.
+	 */
+	public String processConversation(String currentInput)
+	{
+		String nextTalk = "Anything else that you like?";
+		int randomTopic = (int) (Math.random() * 5); //Generates a random number between 0 and 4.
+		
+		if(softwareCheckerContent(currentInput))
+		{
+			return "Think you might use that someday?";
+		}
+		
+		if(politicalCheckerContent(currentInput))
+		{
+			return "That surely is interesting!";
+		}
+		
+		if(keyboardMashChecker(currentInput))
+		{
+			return "Stop mashing my keys!";
+		}
+		return nextTalk;
+	}
 	
+	/**
+	 * Getter for userName.
+	 * @return
+	 */
+	public String getUserName()
+	{
+		return userName;
+	}
 	
+	/**
+	 * Getter for content.
+	 */
+	public String getContent()
+	{
+		return content;
+	}
 	
+	/**
+	 * Getter method for software list.
+	 */
+	public ArrayList<String> getSoftwareList()
+	{
+		return softwareList;
+	}
+	
+	/**
+	 * Getter method for political topic list.
+	 */
+	public ArrayList<String> getPoliticalList()
+	{
+		return politicalList;
+	}
+	
+	/**
+	 * Updates content for this chatbot instance.
+	 */
+	public void setContent(String content)
+	{
+		this.content = content;
+	}
 }

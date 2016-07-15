@@ -26,7 +26,7 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 /**
- * Version 3.0
+ * Version 3.1
  * @author htha9587
  * 7-15-16
  */
