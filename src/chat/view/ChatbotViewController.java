@@ -26,9 +26,9 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 /**
- * Version 2.9
+ * Version 3.0
  * @author htha9587
- * 7-14-16
+ * 7-15-16
  */
 
 public class ChatbotViewController 

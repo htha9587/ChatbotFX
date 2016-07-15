@@ -3,7 +3,7 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 2.9
+ * Version 3.0
  * @author htha9587
  * 7-15-16
  * Makes up the Framework for the ChatbotFX program.
@@ -16,6 +16,7 @@ public class ChatbotModel
 	private String userName;
 	private String content;
 	private String politicalContent;
+	private String softwareContent;
 	
 	
 	/**
@@ -24,7 +25,8 @@ public class ChatbotModel
 	public ChatbotModel(String userName)
 	{
 		this.userName = userName;
-		this.content = "Software Topics";
+		this.softwareContent = "Software Topics";
+		this.content = "";
 		this.politicalList = new ArrayList<String>();
 		this.softwareList = new ArrayList<String>();
 		this.politicalContent = "2016 Election";
@@ -100,4 +102,52 @@ public class ChatbotModel
 			return hasContent;		
 	}
 			
+	/**
+	 * Checks if topic is matched, and returns true if matched.
+	 */
+	public boolean politicalCheckerContent(String currentInput)
+	{
+		boolean hasPolitical = false;
+		
+		if(currentInput.toLowerCase().contains(politicalContent.toLowerCase()))
+		{
+			hasPolitical = true;
+		}
+		return hasPolitical;
+	}
+	
+	/**
+	 * Checks if topic is matched, and returns true if matched.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean softwareCheckerContent(String currentInput)
+	{
+		boolean hasSoftware = false;
+		
+		if(currentInput.toLowerCase().contains(softwareContent.toLowerCase()))
+		{
+			hasSoftware = true;
+		}
+		return hasSoftware;
+	}
+	/**
+	 * Checker for whether or not the user is typing in keyboard nonsense.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean keyboardMashChecker(String currentInput)
+	{
+		boolean isMash = false;
+		
+		if(currentInput.equals("sdf") || currentInput.equals(",./") || currentInput.equals("dfg") || currentInput.equals("cvb"))
+		{
+			isMash = true;
+		}
+		return isMash;
+	}
+	
+	
+	
+	
 }
