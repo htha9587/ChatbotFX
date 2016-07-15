@@ -2,6 +2,7 @@ package chat.view;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -65,6 +66,7 @@ public class ChatbotViewController
 	private WebEngine engine;
 	private AnchorPane rootLayout;
 	private BorderPane rootLayout2;
+	private ChatbotModel user;
 	private ChatbotModel harryBot;
 	private ChatbotFXTwitter myTwitter;
 	private FileWriter fileWriter;
@@ -84,7 +86,7 @@ public class ChatbotViewController
 	public ChatbotViewController()
 	{
 		myTwitter = new ChatbotFXTwitter(this);
-		String user;
+		String user = null;
 		harryBot = new ChatbotModel(user);
 	}
 	
@@ -95,11 +97,188 @@ public class ChatbotViewController
 	engine.load("https://www.google.com/maps");
 	}
 	
+	/**
+	 * Getter for the model class.
+	 * 
+	 */
+	public ChatbotModel getChatbotModel()
+	{
+		return harryBot;
+	}
 	
 	public void setChatbotRunner(ChatbotRunner chatbotRunner)
 	{
 		this.chatbotRunner = chatbotRunner;
 	}
+	
+	
+	/**
+	 *  Starts chat method.
+	 * @param event
+	 */
+	public String fromUserToChatbot(String textFromUser)
+	{
+		String botResponse = "What do you like?";
+		botResponse = harryBot.processConversation(textFromUser);
+		return botResponse;
+	}
+	
+	/**
+	 * Sends tweet to Twitter.
+	 * @param input
+	 * @return
+	 */
+	public String fromChatbottoTwitter(String input)
+	{
+		String result = "";
+		Alert alert = new Alert(AlertType.INFORMATION);
+		alert.setTitle("Sending!");
+		alert.setHeaderText(null);
+		alert.setContentText("Sending your Tweet!");
+		alert.setGraphic(new ImageView("file:resources/images/HAL.png"));
+		//Gets the stage.
+		Stage stage1 = (Stage) alert.getDialogPane().getScene().getWindow();
+		stage1.getIcons().add(new Image("file:resources/images/HAL.png"));
+		alert.showAndWait();
+		myTwitter.sendTweet("");
+		
+		return result;
+	}
+	
+	/**
+	 * Searches for tweets and returns results.
+	 * @param input
+	 * @return
+	 */
+	public String chatbotTwitterSearch(String input)
+	{
+		String result = "";
+		Alert alert = new Alert(AlertType.INFORMATION);
+		alert.setTitle("Searching...");
+		alert.setHeaderText(null);
+		alert.setContentText("Give me a second...");
+		alert.setGraphic(new ImageView("file:resources/images/HAL.png"));
+		//Gets the stage.
+		Stage stage1 = (Stage) alert.getDialogPane().getScene().getWindow();
+		stage1.getIcons().add(new Image("file:resources/images/HAL.png"));
+		alert.showAndWait();
+		result = myTwitter.sampleInvestigaton();
+		
+		return result;
+	}
+	
+	/**
+	 * Writes text to a file and reads from said file.
+	 * @param event
+	 */
+	public void bufferedWriter(String input)
+	{
+		String fileName = "ChatbotFXFile.txt"; //Filename
+		
+		try
+		{
+			FileWriter fileWriter = new FileWriter(fileName);
+			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+			bufferedWriter.write("Want me to save something of our conversation?");
+			bufferedWriter.write(input);
+			bufferedWriter.newLine();
+			bufferedWriter.write("Watch as I save to a file!");
+			
+			//Closes file.
+			bufferedWriter.close();
+			
+			Alert alert = new Alert(AlertType.INFORMATION);
+			alert.setTitle("Success!");
+			alert.setHeaderText(null);
+			alert.setContentText("Saved! Check ChatbotFXFile.txt!");
+			alert.setGraphic(new ImageView("file:resources/images/HAL.png"));
+			//Gets the stage.
+			Stage stage1 = (Stage) alert.getDialogPane().getScene().getWindow();
+			stage1.getIcons().add(new Image("file:resources/images/HAL.png"));
+			alert.showAndWait();
+			
+			
+		}catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	
+	public String bufferedReader()
+	{
+		BufferedReader bufferedReader = null;
+		
+		String fileContents = "";
+		
+		try
+		{
+			File file = new File("ChatbotFXFile.txt");
+			bufferedReader = new BufferedReader(new FileReader(file));
+			
+			
+			Alert alert = new Alert(AlertType.INFORMATION);
+			alert.setTitle("Opened!");
+			alert.setHeaderText(null);
+			alert.setContentText("Opening your file!");
+			alert.setGraphic(new ImageView("file:resources/images/HAL.png"));
+			//Gets the stage.
+			Stage stage1 = (Stage) alert.getDialogPane().getScene().getWindow();
+			stage1.getIcons().add(new Image("file:resources/images/HAL.png"));
+			alert.showAndWait();
+			String currentLine = "";
+			while ((currentLine = bufferedReader.readLine()) != null)
+			{
+				fileContents += currentLine + "\n";
+			}
+
+			Alert alert1 = new Alert(AlertType.INFORMATION);
+			alert.setTitle("Read!");
+			alert.setHeaderText(null);
+			alert.setContentText("Reading your file!");
+			alert.setGraphic(new ImageView("file:resources/images/HAL.png"));
+			//Gets the stage.
+			Stage stage2 = (Stage) alert.getDialogPane().getScene().getWindow();
+			stage1.getIcons().add(new Image("file:resources/images/HAL.png"));
+			alert.showAndWait();
+		}
+		
+		catch (IOException ex)
+		
+		{
+			ex.printStackTrace();
+		}
+		
+		finally
+		{
+			try 
+			{
+				bufferedReader.close();
+			}
+			catch(IOException ex)
+			{
+				ex.printStackTrace();
+			}
+		}
+		
+		return fileContents;
+		
+	}
+	
+	public void openFile()
+	{
+		Alert alert = new Alert(AlertType.INFORMATION);
+		alert.setTitle("Hold Up!");
+		alert.setHeaderText(null);
+		alert.setContentText("Opening our conversation!");
+		alert.setGraphic(new ImageView("file:resources/images/HAL.png"));
+		//Gets the stage.
+		Stage stage1 = (Stage) alert.getDialogPane().getScene().getWindow();
+		stage1.getIcons().add(new Image("file:resources/images/HAL.png"));
+		alert.showAndWait();
+	}
+	
+	
 	
 	@FXML
 	private void handleQuitButton(ActionEvent event)
