@@ -1,12 +1,16 @@
 package chat.view;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import com.calendarfx.view.CalendarView;
-
 import chat.ChatbotRunner;
+import chat.model.ChatbotFXTwitter;
+import chat.model.ChatbotModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -26,7 +30,7 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 /**
- * Version 3.1
+ * Version 3.2
  * @author htha9587
  * 7-15-16
  */
@@ -61,6 +65,15 @@ public class ChatbotViewController
 	private WebEngine engine;
 	private AnchorPane rootLayout;
 	private BorderPane rootLayout2;
+	private ChatbotModel harryBot;
+	private ChatbotFXTwitter myTwitter;
+	private FileWriter fileWriter;
+	private BufferedWriter bufferedWriter;
+	private String fileName;
+	private FileReader fileReader;
+	private BufferedReader bufferedReader;
+	private String path;
+	private String file;
 	
 	//Reference to main application.
 	private ChatbotRunner chatbotRunner;
@@ -70,7 +83,9 @@ public class ChatbotViewController
 	 */
 	public ChatbotViewController()
 	{
-		
+		myTwitter = new ChatbotFXTwitter(this);
+		String user;
+		harryBot = new ChatbotModel(user);
 	}
 	
 	public void initialize(URL location, ResourceBundle resources)
