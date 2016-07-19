@@ -29,11 +29,13 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
+import twitter4j.Twitter;
+import twitter4j.User;
 
 /**
- * Version 3.2
+ * Version 3.3
  * @author htha9587
- * 7-15-16
+ * 7-19-16
  */
 
 public class ChatbotViewController 
@@ -76,6 +78,9 @@ public class ChatbotViewController
 	private BufferedReader bufferedReader;
 	private String path;
 	private String file;
+	private ChatbotViewController baseController;
+	protected static final User List = null;
+	Twitter twitter;
 	
 	//Reference to main application.
 	private ChatbotRunner chatbotRunner;
@@ -83,8 +88,9 @@ public class ChatbotViewController
 	/**
 	 * Constructor called before initialize method.
 	 */
-	public ChatbotViewController()
+	public ChatbotViewController(ChatbotViewController baseController)
 	{
+		this.baseController = baseController;
 		myTwitter = new ChatbotFXTwitter(this);
 		String user = null;
 		harryBot = new ChatbotModel(user);
@@ -339,4 +345,14 @@ public class ChatbotViewController
 	}
 		
 }
+	
+	
+	//Getter for the text field.
+	public TextField getTextField()
+	{
+		return chatField;
+	}
+	
+	
+	
 }
