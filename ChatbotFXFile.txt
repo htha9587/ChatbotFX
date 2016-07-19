@@ -1,0 +1,30 @@
+Want me to save something of our conversation?
+User: cvb
+ChatbotFX: Stop mashing my keys!
+User: Trump
+ChatbotFX: That surely is interesting!
+User: Jira
+ChatbotFX: Think you might use that someday?
+User: Spring Framework
+ChatbotFX: Think you might use that someday?
+User: ,./
+ChatbotFX: Stop mashing my keys!
+User: Scott Walker
+ChatbotFX: That surely is interesting!
+User: vote
+ChatbotFX: That surely is interesting!
+User: Unit Testing
+ChatbotFX: Think you might use that someday?
+User: Java EE
+ChatbotFX: Think you might use that someday?
+User: Carson
+ChatbotFX: That surely is interesting!
+User: sdf
+ChatbotFX: Stop mashing my keys!
+User: 
+ChatbotFX: Anything else that you like?
+User: 
+ChatbotFX: Anything else that you like?
+User: 
+ChatbotFX: Anything else that you like?
+Watch as I save to a file!

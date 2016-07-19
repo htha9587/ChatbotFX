@@ -3,7 +3,7 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 3.5
+ * Version 3.6
  * @author htha9587
  * 7-19-16
  * Makes up the Framework for the ChatbotFX program.
@@ -109,7 +109,16 @@ public class ChatbotModel
 	{
 		boolean hasPolitical = false;
 		
-		if(currentInput.toLowerCase().contains(politicalContent.toLowerCase()))
+		if(currentInput.equals("Trump") 
+				|| currentInput.equals("Clinton") 
+				|| currentInput.equals("Scott Walker") 
+				|| currentInput.equals("Biden") 
+				|| currentInput.equals("Carson") 
+				|| currentInput.equals("Rubio") 
+				|| currentInput.equals("Fiorina") 
+				|| currentInput.equals("Sanders") 
+				|| currentInput.equals("vote") 
+				|| currentInput.equals("11/5/16"))
 		{
 			hasPolitical = true;
 		}
@@ -125,7 +134,16 @@ public class ChatbotModel
 	{
 		boolean hasSoftware = false;
 		
-		if(currentInput.toLowerCase().contains(softwareContent.toLowerCase()))
+		if(currentInput.equals("Spring Framework") 
+				|| currentInput.equals("Java EE") 
+				|| currentInput.equals("Angular JS") 
+				|| currentInput.equals("Django") 
+				|| currentInput.equals("Git") 
+				|| currentInput.equals("Jira") 
+				|| currentInput.equals("Maven") 
+				|| currentInput.equals("Machine Learning") 
+				|| currentInput.equals("Unit Testing") 
+				|| currentInput.equals("DevOps"))
 		{
 			hasSoftware = true;
 		}

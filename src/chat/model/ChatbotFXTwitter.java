@@ -21,9 +21,10 @@ import twitter4j.Twitter;//Add core jar to buildpath.
 import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
 import twitter4j.User;
+import twitter4j.conf.ConfigurationBuilder;
 
 /**
- * Version 3.5
+ * Version 3.6
  * @author htha9587
  * 7-19-16
  */
@@ -46,7 +47,6 @@ public class ChatbotFXTwitter
 	public ChatbotFXTwitter(ChatbotViewController baseController)
 	{
 		this.baseController = baseController;
-		chatbotTwitter = TwitterFactory.getSingleton();
 		statuses = new ArrayList<Status>();
 		tweetTexts = new ArrayList<String>();
 	}

@@ -33,7 +33,7 @@ import twitter4j.Twitter;
 import twitter4j.User;
 
 /**
- * Version 3.5
+ * Version 3.6
  * @author htha9587
  * 7-19-16
  */
