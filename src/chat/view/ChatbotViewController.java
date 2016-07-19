@@ -33,7 +33,7 @@ import twitter4j.Twitter;
 import twitter4j.User;
 
 /**
- * Version 3.3
+ * Version 3.4
  * @author htha9587
  * 7-19-16
  */
@@ -300,6 +300,51 @@ public class ChatbotViewController
 		stage1.getIcons().add(new Image("file:resources/images/HAL.png"));
 		alert.showAndWait();
 		System.exit(0); //Closes the application.
+	}
+	
+	@FXML
+	private void handleChatButton(ActionEvent event)
+	{
+		String userText = chatField.getText(); //Grabs user Text.
+		String response = baseController.fromUserToChatbot(userText); //Displays user text.
+		chatArea.appendText("\nUser: " + userText); //Gives text to Model for processing.
+		chatArea.appendText("\nChatbotFX: " + response); //Gets and displays answer.
+		chatField.setText(""); //Clears user field.
+	}
+	
+	@FXML
+	private void handleTweetButton(ActionEvent event)
+	{
+		String userText = chatField.getText(); //Grabs user text.
+		String response = baseController.fromChatbottoTwitter(userText); //Displays user text.
+		chatArea.appendText("\nUser: " + userText); //Gives text to model for processing.
+		chatArea.appendText("\nUser: " + response); //Gets and displays answer.
+		chatField.setText(""); //Clears user field.
+	}
+	
+	@FXML
+	private void handleSearchButton(ActionEvent event)
+	{
+		String userText = chatField.getText(); //Grabs user text.
+		String response = baseController.chatbotTwitterSearch(userText); //Displays user text.
+		chatArea.appendText("\nUser: " + userText); //Gives text to model for processing.
+		chatArea.appendText("\nUser: " + response); //Gets and displays answer.
+		chatField.setText(""); //Clears user field.
+	}
+	
+	@FXML
+	private void handleSaveButton(ActionEvent event)
+	{
+		String userText = chatArea.getText(); //Grabs conversation text.
+		baseController.bufferedWriter(userText); //Displays user text.
+		chatArea.appendText("\nUser: " + userText); //Gets and displays answer.
+		chatField.setText(""); //Clears user field.
+	}
+	
+	@FXML
+	private void handleLoadButton(ActionEvent event)
+	{
+		chatArea.setText(baseController.bufferedReader());
 	}
 	
 	@FXML
