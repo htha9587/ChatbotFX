@@ -24,7 +24,7 @@
                <font>
                   <Font size="14.0" />
                </font></TextField>
-            <Button fx:id="chatButton" mnemonicParsing="false" text="Chatbot's Button">
+            <Button fx:id="chatButton" mnemonicParsing="false" onAction="#handleChatButton" text="Chatbot's Button">
                <font>
                   <Font size="14.0" />
                </font></Button>
@@ -43,22 +43,22 @@
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="loadButton" mnemonicParsing="false" text="Load from File">
+            <Button fx:id="loadButton" mnemonicParsing="false" onAction="#handleLoadButton" text="Load from File">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="saveButton" mnemonicParsing="false" text="Save to File">
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#handleSaveButton" text="Save to File">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="sendButton" mnemonicParsing="false" text="Send Tweet">
+            <Button fx:id="sendButton" mnemonicParsing="false" onAction="#handleTweetButton" text="Send Tweet">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="searchButton" mnemonicParsing="false" text="Search Twitter">
+            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#handleSearchButton" text="Search Twitter">
                <font>
                   <Font size="14.0" />
                </font>

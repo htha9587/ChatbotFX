@@ -33,7 +33,7 @@ import twitter4j.Twitter;
 import twitter4j.User;
 
 /**
- * Version 3.4
+ * Version 3.5
  * @author htha9587
  * 7-19-16
  */
@@ -78,7 +78,7 @@ public class ChatbotViewController
 	private BufferedReader bufferedReader;
 	private String path;
 	private String file;
-	private ChatbotViewController baseController;
+	//private ChatbotViewController baseController;
 	protected static final User List = null;
 	Twitter twitter;
 	
@@ -88,9 +88,8 @@ public class ChatbotViewController
 	/**
 	 * Constructor called before initialize method.
 	 */
-	public ChatbotViewController(ChatbotViewController baseController)
+	public ChatbotViewController()
 	{
-		this.baseController = baseController;
 		myTwitter = new ChatbotFXTwitter(this);
 		String user = null;
 		harryBot = new ChatbotModel(user);
@@ -306,7 +305,7 @@ public class ChatbotViewController
 	private void handleChatButton(ActionEvent event)
 	{
 		String userText = chatField.getText(); //Grabs user Text.
-		String response = baseController.fromUserToChatbot(userText); //Displays user text.
+		String response = fromUserToChatbot(userText); //Displays user text.
 		chatArea.appendText("\nUser: " + userText); //Gives text to Model for processing.
 		chatArea.appendText("\nChatbotFX: " + response); //Gets and displays answer.
 		chatField.setText(""); //Clears user field.
@@ -316,7 +315,7 @@ public class ChatbotViewController
 	private void handleTweetButton(ActionEvent event)
 	{
 		String userText = chatField.getText(); //Grabs user text.
-		String response = baseController.fromChatbottoTwitter(userText); //Displays user text.
+		String response = fromChatbottoTwitter(userText); //Displays user text.
 		chatArea.appendText("\nUser: " + userText); //Gives text to model for processing.
 		chatArea.appendText("\nUser: " + response); //Gets and displays answer.
 		chatField.setText(""); //Clears user field.
@@ -326,7 +325,7 @@ public class ChatbotViewController
 	private void handleSearchButton(ActionEvent event)
 	{
 		String userText = chatField.getText(); //Grabs user text.
-		String response = baseController.chatbotTwitterSearch(userText); //Displays user text.
+		String response = chatbotTwitterSearch(userText); //Displays user text.
 		chatArea.appendText("\nUser: " + userText); //Gives text to model for processing.
 		chatArea.appendText("\nUser: " + response); //Gets and displays answer.
 		chatField.setText(""); //Clears user field.
@@ -336,7 +335,7 @@ public class ChatbotViewController
 	private void handleSaveButton(ActionEvent event)
 	{
 		String userText = chatArea.getText(); //Grabs conversation text.
-		baseController.bufferedWriter(userText); //Displays user text.
+		bufferedWriter(userText); //Displays user text.
 		chatArea.appendText("\nUser: " + userText); //Gets and displays answer.
 		chatField.setText(""); //Clears user field.
 	}
@@ -344,7 +343,7 @@ public class ChatbotViewController
 	@FXML
 	private void handleLoadButton(ActionEvent event)
 	{
-		chatArea.setText(baseController.bufferedReader());
+		chatArea.setText(bufferedReader());
 	}
 	
 	@FXML

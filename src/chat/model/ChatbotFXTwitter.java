@@ -23,7 +23,7 @@ import twitter4j.TwitterFactory;
 import twitter4j.User;
 
 /**
- * Version 3.4
+ * Version 3.5
  * @author htha9587
  * 7-19-16
  */
