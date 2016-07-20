@@ -24,13 +24,13 @@ import twitter4j.User;
 import twitter4j.conf.ConfigurationBuilder;
 
 /**
- * Version 3.7
+ * Version 3.8
  * @author htha9587
- * 7-19-16
+ * 7-20-16
  */
 
 
-public class ChatbotFXTwitter 
+public class CTECTwitter 
 {
 	private static final String Listener = null;
 	private static final String baseFrame = null;
@@ -44,9 +44,10 @@ public class ChatbotFXTwitter
 	 * Constructor.
 	 * @param baseController
 	 */
-	public ChatbotFXTwitter(ChatbotViewController baseController)
+	public CTECTwitter(ChatbotViewController baseController)
 	{
 		this.baseController = baseController;
+		//chatbotTwitter = TwitterFactory.getSingleton();
 		statuses = new ArrayList<Status>();
 		tweetTexts = new ArrayList<String>();
 	}
@@ -341,7 +342,7 @@ public class ChatbotFXTwitter
 	{
 		String results = "";
 		
-		Query query = new Query("JavaFX");
+		Query query = new Query(baseController.chatbotTwitterSearch(results));
 		query.setCount(10);
 		//query.setGeoCode(new GeoLocation(40.587521, -111.869178), 500, Query.MILES);
 		query.setSince("2016-1-1");

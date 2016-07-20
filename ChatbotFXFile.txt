@@ -30,4 +30,66 @@ ChatbotFX: Anything else that you like?
 Watch as I save to a file!
 null
 
+User: 
+User: Count : 10
+@Felix Bembrick: @tobibley High performance scene graph and rendering pipeline. #JavaFX
+@nuria_pp: RT @SecurityNewsbot: CVE-2016-3498 #Oracle #Java JavaFX Denial of Service https://t.co/2fEBVe2HYv #McAfee
+@Cesar A. Nogueira: RT @net0pyr: The latest JavaFX Daily! https://t.co/YTaU4Zmk8i Thanks to @divino_marchese @tkuenneth #javafx #java
+@Security News Bot: CVE-2016-3498 #Oracle #Java JavaFX Denial of Service https://t.co/2fEBVe2HYv #McAfee
+@Cx2H: Oracle Java JavaFX Denial of Service https://t.co/XXCJOmcr2R #InfoSec
+@Michael Heinrichs: The latest JavaFX Daily! https://t.co/YTaU4Zmk8i Thanks to @divino_marchese @tkuenneth #javafx #java
+@???????: RT @wakamesoba98: JavaFX?ListView??????1000??????????????????????????????????ListView??????????????Canvas???ListView????
+@Eduardo F Simone: RT @JAXenterCOM: Game development with #Java, #Kotlin and #JavaFX https://t.co/ak2uSFasIT https://t.co/dM7g59T26G
+@??????? ???????: ?????????? ?????? ?? Frame ?? ??????? Frame - Java GUI & JavaFX https://t.co/aHwN8H7YDi
+@teamhimeH: javafx????event????????????????
+
+User: 
+User: 
+User: Want me to save something of our conversation?
+User: cvb
+ChatbotFX: Stop mashing my keys!
+User: Trump
+ChatbotFX: That surely is interesting!
+User: Jira
+ChatbotFX: Think you might use that someday?
+User: Spring Framework
+ChatbotFX: Think you might use that someday?
+User: ,./
+ChatbotFX: Stop mashing my keys!
+User: Scott Walker
+ChatbotFX: That surely is interesting!
+User: vote
+ChatbotFX: That surely is interesting!
+User: Unit Testing
+ChatbotFX: Think you might use that someday?
+User: Java EE
+ChatbotFX: Think you might use that someday?
+User: Carson
+ChatbotFX: That surely is interesting!
+User: sdf
+ChatbotFX: Stop mashing my keys!
+User: 
+ChatbotFX: Anything else that you like?
+User: 
+ChatbotFX: Anything else that you like?
+User: 
+ChatbotFX: Anything else that you like?
+Watch as I save to a file!
+null
+
+User: 
+User: Count : 10
+@Felix Bembrick: @tobibley High performance scene graph and rendering pipeline. #JavaFX
+@nuria_pp: RT @SecurityNewsbot: CVE-2016-3498 #Oracle #Java JavaFX Denial of Service https://t.co/2fEBVe2HYv #McAfee
+@Cesar A. Nogueira: RT @net0pyr: The latest JavaFX Daily! https://t.co/YTaU4Zmk8i Thanks to @divino_marchese @tkuenneth #javafx #java
+@Security News Bot: CVE-2016-3498 #Oracle #Java JavaFX Denial of Service https://t.co/2fEBVe2HYv #McAfee
+@Cx2H: Oracle Java JavaFX Denial of Service https://t.co/XXCJOmcr2R #InfoSec
+@Michael Heinrichs: The latest JavaFX Daily! https://t.co/YTaU4Zmk8i Thanks to @divino_marchese @tkuenneth #javafx #java
+@???????: RT @wakamesoba98: JavaFX?ListView??????1000??????????????????????????????????ListView??????????????Canvas???ListView????
+@Eduardo F Simone: RT @JAXenterCOM: Game development with #Java, #Kotlin and #JavaFX https://t.co/ak2uSFasIT https://t.co/dM7g59T26G
+@??????? ???????: ?????????? ?????? ?? Frame ?? ??????? Frame - Java GUI & JavaFX https://t.co/aHwN8H7YDi
+@teamhimeH: javafx????event????????????????
+
+User: 
+User: 
 Watch as I save to a file!

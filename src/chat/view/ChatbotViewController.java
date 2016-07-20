@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 
 import com.calendarfx.view.CalendarView;
 import chat.ChatbotRunner;
-import chat.model.ChatbotFXTwitter;
+import chat.model.CTECTwitter;
 import chat.model.ChatbotModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -34,12 +34,13 @@ import javafx.scene.web.WebView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import twitter4j.Twitter;
+import twitter4j.TwitterFactory;
 import twitter4j.User;
 
 /**
- * Version 3.7
+ * Version 3.8
  * @author htha9587
- * 7-19-16
+ * 7-20-16
  * @param <T>
  */
 
@@ -75,7 +76,7 @@ public class ChatbotViewController<T>
 	private BorderPane rootLayout2;
 	private ChatbotModel user;
 	private ChatbotModel harryBot;
-	private ChatbotFXTwitter myTwitter;
+	private CTECTwitter myTwitter;
 	private FileWriter fileWriter;
 	private BufferedWriter bufferedWriter;
 	private String fileName;
@@ -84,6 +85,7 @@ public class ChatbotViewController<T>
 	private String path;
 	private String file;
 	private T data;
+	private Twitter chatbotTwitter;
 	//private ChatbotViewController baseController;
 	protected static final User List = null;
 	Twitter twitter;
@@ -96,9 +98,10 @@ public class ChatbotViewController<T>
 	 */
 	public ChatbotViewController()
 	{
-		myTwitter = new ChatbotFXTwitter(this);
+		myTwitter = new CTECTwitter(this);
 		String user = null;
 		harryBot = new ChatbotModel(user);
+		chatbotTwitter = TwitterFactory.getSingleton();
 	}
 	
 	public void initialize(URL location, ResourceBundle resources)
@@ -141,7 +144,7 @@ public class ChatbotViewController<T>
 	 */
 	public String fromChatbottoTwitter(String input)
 	{
-		String result = "";
+		String result = chatField.getText();
 		Alert alert = new Alert(AlertType.INFORMATION);
 		alert.setTitle("Sending!");
 		alert.setHeaderText(null);
@@ -151,7 +154,15 @@ public class ChatbotViewController<T>
 		Stage stage1 = (Stage) alert.getDialogPane().getScene().getWindow();
 		stage1.getIcons().add(new Image("file:resources/images/HAL.png"));
 		alert.showAndWait();
-		myTwitter.sendTweet("");
+		
+		// Sends tweet by having user type in the text field and clicking the send button.
+		try {
+			chatbotTwitter.updateStatus("ChatbotFX: " + chatField.getText()
+					+ "#APCSROCKS @CTECNow Thanks @ cscheerleader & @codyhenrichsen!");
+		} catch (twitter4j.TwitterException e) {
+			
+			e.printStackTrace();
+		}
 		
 		return result;
 	}
@@ -163,7 +174,7 @@ public class ChatbotViewController<T>
 	 */
 	public String chatbotTwitterSearch(String input)
 	{
-		String result = "";
+		String result = chatField.getText();
 		Alert alert = new Alert(AlertType.INFORMATION);
 		alert.setTitle("Searching...");
 		alert.setHeaderText(null);
