@@ -3,11 +3,14 @@ package chat.view;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Logger;
+
 import com.calendarfx.view.CalendarView;
 import chat.ChatbotRunner;
 import chat.model.ChatbotFXTwitter;
@@ -28,17 +31,19 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import twitter4j.Twitter;
 import twitter4j.User;
 
 /**
- * Version 3.6
+ * Version 3.7
  * @author htha9587
  * 7-19-16
+ * @param <T>
  */
 
-public class ChatbotViewController 
+public class ChatbotViewController<T> 
 {
 	@FXML
 	private WebView webView;
@@ -78,6 +83,7 @@ public class ChatbotViewController
 	private BufferedReader bufferedReader;
 	private String path;
 	private String file;
+	private T data;
 	//private ChatbotViewController baseController;
 	protected static final User List = null;
 	Twitter twitter;
@@ -343,9 +349,38 @@ public class ChatbotViewController
 	@FXML
 	private void handleLoadButton(ActionEvent event)
 	{
-		chatArea.setText(bufferedReader());
+		//Loads text file into TextArea.
+		FileChooser fileChooser = new FileChooser();
+		StringBuilder sb = null;
+		fileChooser.setTitle("Find the conversation file!");
+		fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
+		 //Set extension filter
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("TXT files (*.txt)", "*.txt");
+        fileChooser.getExtensionFilters().add(extFilter);
+		//Show save file dialog.
+        File file = fileChooser.showOpenDialog(null);
+        sb = readFile(file);
+        chatArea.setText(sb.toString());
 	}
 	
+	public StringBuilder readFile(File selectedFile){
+		         StringBuilder sb = new StringBuilder(1024);
+		         String curLine = "";
+		         try{
+		              FileReader fr = new FileReader(selectedFile);
+		              BufferedReader br = new BufferedReader(fr);
+		          
+		             while(curLine != null){
+		                 curLine = br.readLine();
+		                 sb.append(curLine).append("\n");
+		             }
+		         } catch (Exception e){
+		             e.getMessage();
+		         }
+		        return sb;
+		     }
+	
+
 	@FXML
 	private void handleCalendarButton(ActionEvent event)
 	{
@@ -397,6 +432,9 @@ public class ChatbotViewController
 		return chatField;
 	}
 	
-	
+	public T getData()
+	{
+		return data;
+	}
 	
 }

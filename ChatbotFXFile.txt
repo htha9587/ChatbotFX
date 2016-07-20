@@ -1,4 +1,4 @@
-Want me to save something of our conversation?
+Want me to save something of our conversation?Want me to save something of our conversation?
 User: cvb
 ChatbotFX: Stop mashing my keys!
 User: Trump
@@ -27,4 +27,7 @@ User:
 ChatbotFX: Anything else that you like?
 User: 
 ChatbotFX: Anything else that you like?
+Watch as I save to a file!
+null
+
 Watch as I save to a file!
