@@ -1,37 +1,9 @@
-Want me to save something of our conversation?Want me to save something of our conversation?
-User: cvb
-ChatbotFX: Stop mashing my keys!
-User: Trump
-ChatbotFX: That surely is interesting!
-User: Jira
-ChatbotFX: Think you might use that someday?
-User: Spring Framework
-ChatbotFX: Think you might use that someday?
-User: ,./
-ChatbotFX: Stop mashing my keys!
-User: Scott Walker
-ChatbotFX: That surely is interesting!
-User: vote
-ChatbotFX: That surely is interesting!
-User: Unit Testing
-ChatbotFX: Think you might use that someday?
-User: Java EE
-ChatbotFX: Think you might use that someday?
-User: Carson
-ChatbotFX: That surely is interesting!
-User: sdf
-ChatbotFX: Stop mashing my keys!
-User: 
-ChatbotFX: Anything else that you like?
-User: 
-ChatbotFX: Anything else that you like?
-User: 
-ChatbotFX: Anything else that you like?
-Watch as I save to a file!
-null
-
-User: 
-User: Count : 10
+Want me to save something of our conversation?
+User: JavaFX
+User: JavaFXCount : 9
+@Marlon Samuels: #How to change text alignment of a combo box items in javafx?
+#Tech #Internet #Question #HowTO
+https://t.co/FP1sADpOV8
 @Felix Bembrick: @tobibley High performance scene graph and rendering pipeline. #JavaFX
 @nuria_pp: RT @SecurityNewsbot: CVE-2016-3498 #Oracle #Java JavaFX Denial of Service https://t.co/2fEBVe2HYv #McAfee
 @Cesar A. Nogueira: RT @net0pyr: The latest JavaFX Daily! https://t.co/YTaU4Zmk8i Thanks to @divino_marchese @tkuenneth #javafx #java
@@ -40,56 +12,90 @@ User: Count : 10
 @Michael Heinrichs: The latest JavaFX Daily! https://t.co/YTaU4Zmk8i Thanks to @divino_marchese @tkuenneth #javafx #java
 @???????: RT @wakamesoba98: JavaFX?ListView??????1000??????????????????????????????????ListView??????????????Canvas???ListView????
 @Eduardo F Simone: RT @JAXenterCOM: Game development with #Java, #Kotlin and #JavaFX https://t.co/ak2uSFasIT https://t.co/dM7g59T26G
-@??????? ???????: ?????????? ?????? ?? Frame ?? ??????? Frame - Java GUI & JavaFX https://t.co/aHwN8H7YDi
-@teamhimeH: javafx????event????????????????
 
-User: 
-User: 
-User: Want me to save something of our conversation?
-User: cvb
-ChatbotFX: Stop mashing my keys!
-User: Trump
-ChatbotFX: That surely is interesting!
-User: Jira
-ChatbotFX: Think you might use that someday?
-User: Spring Framework
-ChatbotFX: Think you might use that someday?
-User: ,./
-ChatbotFX: Stop mashing my keys!
-User: Scott Walker
-ChatbotFX: That surely is interesting!
-User: vote
-ChatbotFX: That surely is interesting!
-User: Unit Testing
-ChatbotFX: Think you might use that someday?
+User: C++
+User: C++Count : 10
+@pinkman: RT @yasmkns: Oe bah moi qd j'y vais avec mes potes c'est pas pareille, dja on essai de trver 1€ https://t.co/uVYf7UTAkf
+@Samela Sobral [BETA]: Aquela saudade do boy... :/ (@ Samela' s House) https://t.co/oUc6O5DnS3
+@S. Sano: I'm at ??? in ???, ??? https://t.co/5Qvzr0qsbt
+@Chlö?òóõéë?è?: RT @Benjamin_Mrlt: moi si j'suis jaloux avec quelqu'un c'est juste psq j'ai pas confiance en moi et que j'ai peur qu'on m'abandonne pour qu…
+@pauw': @kayaslayall ça va ils sont pas énormes sur elle c'est pour ça ?
+@HKKK: RT @pixeh_: il conduisait en sabots dans la bm c pas possible de patiner autant sinon ? https://t.co/y4LKidJz2n
+@Edu: Vamo que vamoo (@ Estadio Manuel Ferreira - @ClubOlimpia in Asunción, Central) https://t.co/QjH2TUUp5v
+@Loyal: RT @Andrea_Mylene1: @Nico_Robinho7 @Rompi_9 profite bien ?
+C'est pas tout les jours que ont à cette chance la ?
+@Pip pap poww: RT @mobigonski: La boule au ventre quand tu t'embrouille avec des personnes à qui tu tiens jurez c'est pas le pire des sentiments
+@CristianStevensonr: RT @CaidenMasonnau: .
+.
+#?????????
+.
+.
+?? W W W , 7DONGA,C 0 M
+.
+.
+?
+?
+?
+?
+?
+?
+?
+?
+?
+?
+.
+?
+?
+?
+?
+?
+?
+?
+?
+?
+?
+.
+?
+?
+?
+?
+?
+?
+?
+?
+?
+?
+????????
+
+User: Brexit
+User: BrexitCount : 6
+@Manuel Etchegaray: Ya empezó el 'brexit': Reino Unido no ejercerá la presidencia de la UE https://t.co/3PtG7401lA #Noticias
+@SR: RT @DavidAllenGreen: Merkel: What does the UK actually want?
+
+May: Brexit means Brexit.
+
+[Pause.]
+
+Merkel: You don't know, do you?
+
+[Pause.…
+@thisismylutterworth: @theresa_may why don't you just stand up for #brexit It does us no good that the #Germans think we don't know what we want #brexitisbrexit
+@gruszka k.c.: RT @strakovka: Premiér @SlavekSobotka se ve Varšav? zú?astní summitu #V4, tématy budou Brexit a zm?ny ve fungování EU. @V4_Pres ? https://t…
+@onse: RT @Nigel_Farage: President Obama came to our country, told us what to do and gave Brexit a bounce of several points.
+https://t.co/Gy4JwpH9…
+@CNN Latino: #CNNLAT Ya empezó el 'brexit': Reino Unido no ejercerá la presidencia de la UE: Reino Unido renunció ... https://t.co/rBpBaoJuUS #CNNLAT
+
 User: Java EE
-ChatbotFX: Think you might use that someday?
-User: Carson
-ChatbotFX: That surely is interesting!
-User: sdf
-ChatbotFX: Stop mashing my keys!
-User: 
-ChatbotFX: Anything else that you like?
-User: 
-ChatbotFX: Anything else that you like?
-User: 
-ChatbotFX: Anything else that you like?
-Watch as I save to a file!
-null
+User: Java EECount : 10
+@José Andrés Salmerón: RT @javaee_guardian: Our petition to Oracle executives on Java EE 8 has crossed 3K+ signatures. Thanks and please spread word https://t.co/…
+@Free & Open Source: Java EE awaits its future - SD Times https://t.co/h2lzf3ROUs https://t.co/kiEEtsTgLH
+@SKEPSOS: Java EE awaits its future https://t.co/Bns1DMxGxD
+@Madison Moore: @JavaLearningTip Java EE awaits its future https://t.co/EoNvDzWuUa
+@javabot: Introducing Java Ee 7: A Look At What's New here  https://t.co/CqKAGXMn8T #jsf @javabot_
+@PokeDankenzon: RT @sdtimes: #Java EE awaits its future https://t.co/hgpnw672yj
+@Greg Turner: sdtimes: #Java EE awaits its future https://t.co/V3V4I6LHdW
+@Josh Long (???, ???): RT @sdtimes: #Java EE awaits its future https://t.co/hgpnw672yj
+@SD Times: #Java EE awaits its future https://t.co/hgpnw672yj
+@Jobs at Baker Hughes: Interested in a #job near #Cochin, Kerala? This could be a great fit: https://t.co/nAtGdp5kIy #GeneralScience #Hiring
 
-User: 
-User: Count : 10
-@Felix Bembrick: @tobibley High performance scene graph and rendering pipeline. #JavaFX
-@nuria_pp: RT @SecurityNewsbot: CVE-2016-3498 #Oracle #Java JavaFX Denial of Service https://t.co/2fEBVe2HYv #McAfee
-@Cesar A. Nogueira: RT @net0pyr: The latest JavaFX Daily! https://t.co/YTaU4Zmk8i Thanks to @divino_marchese @tkuenneth #javafx #java
-@Security News Bot: CVE-2016-3498 #Oracle #Java JavaFX Denial of Service https://t.co/2fEBVe2HYv #McAfee
-@Cx2H: Oracle Java JavaFX Denial of Service https://t.co/XXCJOmcr2R #InfoSec
-@Michael Heinrichs: The latest JavaFX Daily! https://t.co/YTaU4Zmk8i Thanks to @divino_marchese @tkuenneth #javafx #java
-@???????: RT @wakamesoba98: JavaFX?ListView??????1000??????????????????????????????????ListView??????????????Canvas???ListView????
-@Eduardo F Simone: RT @JAXenterCOM: Game development with #Java, #Kotlin and #JavaFX https://t.co/ak2uSFasIT https://t.co/dM7g59T26G
-@??????? ???????: ?????????? ?????? ?? Frame ?? ??????? Frame - Java GUI & JavaFX https://t.co/aHwN8H7YDi
-@teamhimeH: javafx????event????????????????
-
-User: 
-User: 
 Watch as I save to a file!

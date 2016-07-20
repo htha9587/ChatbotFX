@@ -8,7 +8,7 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
 /**
- * Version 3.8
+ * Version 3.9
  * @author htha9587
  * 7-20-16
  */

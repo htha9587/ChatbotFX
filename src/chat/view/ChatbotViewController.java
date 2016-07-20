@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
@@ -33,12 +34,16 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import twitter4j.Query;
+import twitter4j.QueryResult;
+import twitter4j.Status;
 import twitter4j.Twitter;
+import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
 import twitter4j.User;
 
 /**
- * Version 3.8
+ * Version 3.9
  * @author htha9587
  * 7-20-16
  * @param <T>
@@ -184,11 +189,31 @@ public class ChatbotViewController<T>
 		Stage stage1 = (Stage) alert.getDialogPane().getScene().getWindow();
 		stage1.getIcons().add(new Image("file:resources/images/HAL.png"));
 		alert.showAndWait();
-		result = myTwitter.sampleInvestigaton();
+		
+		//Searches for tweets by having the user type in the text field and hitting the search button.
+		Query query = new Query(chatField.getText());
+		query.setCount(10);
+		//query.setGeoCode(new GeoLocation(40.587521, -111.869178), 500, Query.MILES);
+		query.setSince("2016-1-1");
+		try
+		{
+			QueryResult qResult = chatbotTwitter.search(query);
+			result += "Count : " + qResult.getTweets().size() + "\n";
+			for (Status tweet : qResult.getTweets())
+			{
+				result += "@" + tweet.getUser().getName() + ": " + tweet.getText() + "\n";
+			}
+		}
+		
+		catch (TwitterException e)
+		{
+			e.printStackTrace();
+		}
 		
 		return result;
-	}
 	
+	}
+
 	/**
 	 * Writes text to a file and reads from said file.
 	 * @param event
