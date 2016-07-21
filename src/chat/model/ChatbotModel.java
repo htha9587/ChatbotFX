@@ -3,7 +3,7 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 4.1
+ * Version 4.2
  * @author htha9587
  * 7-21-16
  * Makes up the Framework for the ChatbotFX program.
@@ -17,6 +17,8 @@ public class ChatbotModel
 	private String content;
 	private String politicalContent;
 	private String softwareContent;
+	private String ostContent;
+	private String filmContent;
 	
 	
 	/**
@@ -30,6 +32,8 @@ public class ChatbotModel
 		this.politicalList = new ArrayList<String>();
 		this.softwareList = new ArrayList<String>();
 		this.politicalContent = "2016 Election";
+		this.ostContent = "Best Film Soundtracks";
+		this.filmContent = "Favorite Films";
 		
 		buildSoftwareList();
 		buildPoliticalList();
@@ -175,6 +179,58 @@ public class ChatbotModel
 	}
 	
 	/**
+	 * Checker for whether or not the user is typing in OST related topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean ostContentChecker(String currentInput)
+	{
+		boolean isOST = false;
+		
+		if(currentInput.equals("Blade Runner Soundtrack") 
+				|| currentInput.equals("Interstellar Soundtrack") 
+				|| currentInput.equals("The Social Network Soundtrack") 
+				|| currentInput.equals("Oblivion Soundtrack")
+		     	|| currentInput.equals("Tron Legacy Soundtrack")
+                || currentInput.equals("Cloud Atlas Soundtrack")
+                || currentInput.equals("Gravity Soundtrack")
+                || currentInput.equals("Inception Soundtrack")
+                || currentInput.equals("2001: A Space Odyssey Soundtrack")
+                || currentInput.equals("Pulp Fiction Soundtrack"))
+		{
+			isOST = true;
+		}
+		return isOST;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in film related topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean filmContentChecker(String currentInput)
+	{
+		boolean isFilm = false;
+		
+		if(currentInput.equals("Blade Runner") 
+				|| currentInput.equals("Interstellar") 
+				|| currentInput.equals("The Social Network") 
+				|| currentInput.equals("Terminator 2: Judgement Day")
+		     	|| currentInput.equals("Solaris")
+                || currentInput.equals("Cloud Atlas")
+                || currentInput.equals("The Martian")
+                || currentInput.equals("Apocalypse Now")
+                || currentInput.equals("2001: A Space Odyssey")
+                || currentInput.equals("Citizen Kane"))
+		{
+			isFilm = true;
+		}
+		return isFilm;
+	}
+	
+	
+	
+	/**
 	 * Processes conversation between end user and ChatbotFX.
 	 */
 	public String processConversation(String currentInput)
@@ -196,6 +252,17 @@ public class ChatbotModel
 		{
 			return "Stop mashing my keys!";
 		}
+		
+		if(ostContentChecker(currentInput))
+		{
+			return "Is that a favorite of yours?";
+		}
+		
+		if(filmContentChecker(currentInput))
+		{
+			return "That one's a novel!";
+		}
+		
 		return nextTalk;
 	}
 	
