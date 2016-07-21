@@ -3,7 +3,7 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 4.2
+ * Version 4.3
  * @author htha9587
  * 7-21-16
  * Makes up the Framework for the ChatbotFX program.
@@ -19,6 +19,11 @@ public class ChatbotModel
 	private String softwareContent;
 	private String ostContent;
 	private String filmContent;
+	private String scifiAuthorContent;
+	private String musicGenreContent;
+	private String favoriteGamesContent;
+	private String favoriteFoodContent;
+	private String favoriteFilmQuotes;
 	
 	
 	/**
@@ -34,6 +39,11 @@ public class ChatbotModel
 		this.politicalContent = "2016 Election";
 		this.ostContent = "Best Film Soundtracks";
 		this.filmContent = "Favorite Films";
+		this.scifiAuthorContent = "Favorite Sci-Fi Authors";
+		this.musicGenreContent = "Music Genres";
+		this.favoriteGamesContent = "Favorite Games";
+		this.favoriteFoodContent = "Favorite Foods";
+		this.favoriteFilmQuotes = "Favorite Film Quotes";
 		
 		buildSoftwareList();
 		buildPoliticalList();
@@ -228,7 +238,130 @@ public class ChatbotModel
 		return isFilm;
 	}
 	
+	/**
+	 * Checker for whether or not the user is typing in author related topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean scifiAuthorContentChecker(String currentInput)
+	{
+		boolean isAuthor = false;
+		
+		if(currentInput.equals("Robert Heinlein") 
+				|| currentInput.equals("Isaac Asimov") 
+				|| currentInput.equals("Arthur C. Clarke") 
+				|| currentInput.equals("Orson Scott Card")
+		     	|| currentInput.equals("Phillip K. Dick")
+                || currentInput.equals("Ray Bradbury")
+                || currentInput.equals("Jules Verne")
+                || currentInput.equals("H.G Wells")
+                || currentInput.equals("Frank Herbert")
+                || currentInput.equals("William Gibson"))
+		{
+			isAuthor = true;
+		}
+		return isAuthor;
+	}
 	
+	/**
+	 * Checker for whether or not the user is typing in music genre related topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean musicGenreContentChecker(String currentInput)
+	{
+		boolean isMusic = false;
+		
+		if(currentInput.equals("Rock") 
+				|| currentInput.equals("Ambient") 
+				|| currentInput.equals("Industrial") 
+				|| currentInput.equals("Electronic")
+		     	|| currentInput.equals("Love")
+                || currentInput.equals("Acoustic")
+                || currentInput.equals("Blues")
+                || currentInput.equals("Folk")
+                || currentInput.equals("Indie")
+                || currentInput.equals("Classical"))
+		{
+			isMusic = true;
+		}
+		return isMusic;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in favorite game related topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean favoriteGameContentChecker(String currentInput)
+	{
+		boolean isGame = false;
+		
+		if(currentInput.equals("Deus Ex Series") 
+				|| currentInput.equals("Mass Effect Series") 
+				|| currentInput.equals("Mario Series") 
+				|| currentInput.equals("Tomb Raider Series")
+		     	|| currentInput.equals("Uncharted Series")
+                || currentInput.equals("Doom Series")
+                || currentInput.equals("Quake Series")
+                || currentInput.equals("Crysis Series")
+                || currentInput.equals("Halo Series")
+                || currentInput.equals("The Witcher Series"))
+		{
+			isGame = true;
+		}
+		return isGame;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in favorite food related topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean favoriteFoodContentChecker(String currentInput)
+	{
+		boolean isFood= false;
+		
+		if(currentInput.equals("Pasta") 
+				|| currentInput.equals("Eggs") 
+				|| currentInput.equals("Bread") 
+				|| currentInput.equals("Cinnamon Rolls")
+		     	|| currentInput.equals("Grapes")
+                || currentInput.equals("Rolls")
+                || currentInput.equals("Biscuits")
+                || currentInput.equals("Lasagna")
+                || currentInput.equals("Salad")
+                || currentInput.equals("Steak"))
+		{
+			isFood = true;
+		}
+		return isFood;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in favorite film quote related topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean favoriteFilmQuotesContentChecker(String currentInput)
+	{
+		boolean isQuote = false;
+		
+		if(currentInput.equals("I drink your milkshake!") 
+				|| currentInput.equals("This is pretty much the worst thing ever made.") 
+				|| currentInput.equals("They call me Mister Tibbs!") 
+				|| currentInput.equals("Elementary, my dear Watson.")
+		     	|| currentInput.equals("Gentlemen, you can't fight in here! This is the war room!")
+                || currentInput.equals("That'll do, pig. That'll do.")
+                || currentInput.equals("Good morning, Vietnam!")
+                || currentInput.equals("Go ahead, make my day.")
+                || currentInput.equals("Pay no attention to that man behind the curtain!")
+                || currentInput.equals("What we've got here is a failure to communicate."))
+		{
+			isQuote = true;
+		}
+		return isQuote;
+	}
 	
 	/**
 	 * Processes conversation between end user and ChatbotFX.
@@ -261,6 +394,31 @@ public class ChatbotModel
 		if(filmContentChecker(currentInput))
 		{
 			return "That one's a novel!";
+		}
+		
+		if(scifiAuthorContentChecker(currentInput))
+		{
+			return "His work is really good!";
+		}
+		
+		if(musicGenreContentChecker(currentInput))
+		{
+			return "Good taste!";
+		}
+		
+		if(favoriteGameContentChecker(currentInput))
+		{
+			return "Never tried it.";
+		}
+		
+		if(favoriteFoodContentChecker(currentInput))
+		{
+			return "Shame AI's cannot eat!";
+		}
+		
+		if(favoriteFilmQuotesContentChecker(currentInput))
+		{
+			return "Another Zinger!";
 		}
 		
 		return nextTalk;

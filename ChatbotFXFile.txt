@@ -1,4 +1,4 @@
-Want me to save something of our conversation?Want me to save something of our conversation?Want me to save something of our conversation?Want me to save something of our conversation?Want me to save something of our conversation?
+Want me to save something of our conversation?Want me to save something of our conversation?Want me to save something of our conversation?Want me to save something of our conversation?Want me to save something of our conversation?Want me to save something of our conversation?
 User: asdf
 ChatbotFX: Stop mashing my keys!
 User: 12345
@@ -159,4 +159,29 @@ User: Blade Runner Soundtrack
 ChatbotFX: Is that a favorite of yours?
 User: Interstellar
 ChatbotFX: That one's a novel!
+Watch as I save to a file!
+null
+
+User: Jira
+ChatbotFX: Think you might use that someday?
+User: Rubio
+ChatbotFX: That surely is interesting!
+User: asdf
+ChatbotFX: Stop mashing my keys!
+User: Gravity Soundtrack
+ChatbotFX: Is that a favorite of yours?
+User: Solaris
+ChatbotFX: That one's a novel!
+User: Isaac Asimov
+ChatbotFX: His work is really good!
+User: Industrial
+ChatbotFX: Good taste!
+User: Deus Ex Series
+ChatbotFX: Never tried it.
+User: Pasta
+ChatbotFX: Shame AI's cannot eat!
+User: I drink your milkshake!
+ChatbotFX: Another Zinger!
+User: I now have ten topics!
+User: I now have ten topics!
 Watch as I save to a file!
