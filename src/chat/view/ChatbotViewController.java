@@ -217,6 +217,7 @@ public class ChatbotViewController<T>
 	/**
 	 * Writes text to a file and reads from said file.
 	 * @param event
+	 * 
 	 */
 	public void bufferedWriter(String input)
 	{
@@ -237,7 +238,7 @@ public class ChatbotViewController<T>
 			Alert alert = new Alert(AlertType.INFORMATION);
 			alert.setTitle("Success!");
 			alert.setHeaderText(null);
-			alert.setContentText("Saved! Check ChatbotFXFile.txt!");
+			alert.setContentText("Saved! Check the file!");
 			alert.setGraphic(new ImageView("file:resources/images/HAL.png"));
 			//Gets the stage.
 			Stage stage1 = (Stage) alert.getDialogPane().getScene().getWindow();
@@ -250,7 +251,7 @@ public class ChatbotViewController<T>
 			e.printStackTrace();
 		}
 	}
-	
+			
 	
 	public String bufferedReader()
 	{
@@ -374,14 +375,16 @@ public class ChatbotViewController<T>
 	}
 	
 	@FXML
-	private void handleSaveButton(ActionEvent event)
+	private void handleSaveButton(ActionEvent event) throws IOException
 	{
+		//Saves text area text to a text file.
 		String userText = chatArea.getText(); //Grabs conversation text.
 		bufferedWriter(userText); //Displays user text.
 		chatArea.appendText("\nUser: " + userText); //Gets and displays answer.
 		chatField.setText(""); //Clears user field.
 	}
 	
+
 	@FXML
 	private void handleLoadButton(ActionEvent event)
 	{
