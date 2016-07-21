@@ -3,7 +3,7 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 3.9
+ * Version 4.0
  * @author htha9587
  * 7-20-16
  * Makes up the Framework for the ChatbotFX program.
@@ -158,7 +158,16 @@ public class ChatbotModel
 	{
 		boolean isMash = false;
 		
-		if(currentInput.equals("sdf") || currentInput.equals(",./") || currentInput.equals("dfg") || currentInput.equals("cvb"))
+		if(currentInput.equals("sdf") 
+				|| currentInput.equals(",./") 
+				|| currentInput.equals("dfg") 
+				|| currentInput.equals("cvb")
+		     	|| currentInput.equals("asdf")
+                || currentInput.equals("jkl;")
+                || currentInput.equals("qwerty")
+                || currentInput.equals("12345")
+                || currentInput.equals("rthrthr")
+                || currentInput.equals("764677"))
 		{
 			isMash = true;
 		}

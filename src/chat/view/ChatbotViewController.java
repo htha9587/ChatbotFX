@@ -43,7 +43,7 @@ import twitter4j.TwitterFactory;
 import twitter4j.User;
 
 /**
- * Version 3.9
+ * Version 4.0
  * @author htha9587
  * 7-20-16
  * @param <T>
@@ -238,7 +238,7 @@ public class ChatbotViewController<T>
 			Alert alert = new Alert(AlertType.INFORMATION);
 			alert.setTitle("Success!");
 			alert.setHeaderText(null);
-			alert.setContentText("Saved! Check the file!");
+			alert.setContentText("Saved! Check workspace!");
 			alert.setGraphic(new ImageView("file:resources/images/HAL.png"));
 			//Gets the stage.
 			Stage stage1 = (Stage) alert.getDialogPane().getScene().getWindow();
