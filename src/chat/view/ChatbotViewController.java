@@ -43,9 +43,9 @@ import twitter4j.TwitterFactory;
 import twitter4j.User;
 
 /**
- * Version 4.0
+ * Version 4.1
  * @author htha9587
- * 7-20-16
+ * 7-21-16
  * @param <T>
  */
 
@@ -164,6 +164,20 @@ public class ChatbotViewController<T>
 		try {
 			chatbotTwitter.updateStatus("ChatbotFX: " + chatField.getText()
 					+ "#APCSROCKS @CTECNow Thanks @ cscheerleader & @codyhenrichsen!");
+			//Loads FXML file.
+			FXMLLoader loader = new FXMLLoader(ChatbotRunner.class.getResource("view/ChatbotTweet.fxml"));
+			try {
+				rootLayout = (AnchorPane) loader.load();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			Scene scene = new Scene(rootLayout);
+			Stage webView = new Stage();
+			webView.setScene(scene);
+			webView.setTitle("Here is your tweet!"); //Sets title.
+			webView.getIcons().add(new Image("file:resources/images/HAL.png")); //Sets Icon on the top of the window.
+		    webView.show();
 		} catch (twitter4j.TwitterException e) {
 			
 			e.printStackTrace();
