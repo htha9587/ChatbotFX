@@ -3,9 +3,9 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 4.4
+ * Version 4.5
  * @author htha9587
- * 7-21-16
+ * 7-22-16
  * Makes up the Framework for the ChatbotFX program.
  */
 
@@ -29,6 +29,11 @@ public class ChatbotModel
 	private String memeContent;
 	private String spookyDeaths;
 	private String badJobs;
+	private String softwareSchools;
+	private String sadTopics;
+	private String dataTopics;
+	private String fastestCars;
+	private String deadliestPlaces;
 	
 	/**
 	 * Creates instance of ChatbotModel with userName.
@@ -52,6 +57,11 @@ public class ChatbotModel
 		this.biologyScientists = "Biology Scientists";
 		this.memeContent = "2007 Memes";
 		this.badJobs = "Bad Jobs";
+		this.softwareSchools = "Software Schools";
+		this.sadTopics = "Sad Topics";
+		this.dataTopics = "Data Topics";
+		this.fastestCars = "Fastest Cars";
+		this.deadliestPlaces = "Deadliest Places";
 		
 		buildSoftwareList();
 		buildPoliticalList();
@@ -497,6 +507,131 @@ public class ChatbotModel
 	}
 	
 	/**
+	 * Checker for whether or not the user is typing in software school related topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean softwareSchoolsContentChecker(String currentInput)
+	{
+		boolean isSchool = false;
+		
+		if(currentInput.equals("Harvard") 
+				|| currentInput.equals("Carnegie Mellon") 
+				|| currentInput.equals("Boston") 
+				|| currentInput.equals("Santa Clara")
+		     	|| currentInput.equals("Villanova")
+                || currentInput.equals("Denver")
+                || currentInput.equals("Seattle")
+                || currentInput.equals("Fairfield")
+                || currentInput.equals("Rochester")
+                || currentInput.equals("George Mason"))
+		{
+			isSchool = true;
+		}
+		return isSchool;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in sad topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean sadTopicsContentChecker(String currentInput)
+	{
+		boolean isSad = false;
+		
+		if(currentInput.equals("Death") 
+				|| currentInput.equals("Heat Death") 
+				|| currentInput.equals("Entropy") 
+				|| currentInput.equals("Loneliness")
+		     	|| currentInput.equals("Poverty")
+                || currentInput.equals("Starvation")
+                || currentInput.equals("Widow")
+                || currentInput.equals("Loss")
+                || currentInput.equals("Guilt")
+                || currentInput.equals("Anxiety?"))
+		{
+			isSad = true;
+		}
+		return isSad;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in data topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean dataTopicsContentChecker(String currentInput)
+	{
+		boolean isData = false;
+		
+		if(currentInput.equals("Algorithms and Data Structures") 
+				|| currentInput.equals("Sorting & Searching") 
+				|| currentInput.equals("Trees") 
+				|| currentInput.equals("Hash Tables")
+		     	|| currentInput.equals("Graphs")
+                || currentInput.equals("Sorting Algorithms")
+                || currentInput.equals("Databases")
+                || currentInput.equals("Bindings")
+                || currentInput.equals("Documentation")
+                || currentInput.equals("Technical Writing"))
+		{
+			isData = true;
+		}
+		return isData;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in fast car topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean fastCarTopicsContentChecker(String currentInput)
+	{
+		boolean isFast = false;
+		
+		if(currentInput.equals("Hennessey Venom GT") 
+				|| currentInput.equals("Bugatti Chiron") 
+				|| currentInput.equals("Bugatti Veyron Super Sport") 
+				|| currentInput.equals("SSC Ultimate Aero")
+		     	|| currentInput.equals("Koenigsegg CCR")
+                || currentInput.equals("McLaren F1")
+                || currentInput.equals("Aston Martin One-77")
+                || currentInput.equals("Jaguar XJ220")
+                || currentInput.equals("Ferrari LaFerrari")
+                || currentInput.equals("McLaren P1"))
+		{
+			isFast = true;
+		}
+		return isFast;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in deadliest places topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean deadliestPlacesContentChecker(String currentInput)
+	{
+		boolean isPlace = false;
+		
+		if(currentInput.equals("Russia") 
+				|| currentInput.equals("Brazil") 
+				|| currentInput.equals("South Africa") 
+				|| currentInput.equals("Burundi")
+		     	|| currentInput.equals("Antarctica")
+                || currentInput.equals("Afghanistan")
+                || currentInput.equals("Somalia")
+                || currentInput.equals("Sudan")
+                || currentInput.equals("Colombia")
+                || currentInput.equals("Iraq"))
+		{
+			isPlace = true;
+		}
+		return isPlace;
+	}
+	
+	/**
 	 * Processes conversation between end user and ChatbotFX.
 	 */
 	public String processConversation(String currentInput)
@@ -577,6 +712,31 @@ public class ChatbotModel
 		if(badJobsContentChecker(currentInput))
 		{
 			return "Is it really that bad?";
+		}
+		
+		if(softwareSchoolsContentChecker(currentInput))
+		{
+			return "Better make the most out of that place.";
+		}
+		
+		if(sadTopicsContentChecker(currentInput))
+		{
+			return "Please don't ruin this conversation by being cringy.";
+		}
+		
+		if(dataTopicsContentChecker(currentInput))
+		{
+			return "You be sure to study that real well, okay?";
+		}
+		
+		if(fastCarTopicsContentChecker(currentInput))
+		{
+			return "Good luck finding a place trying to top speed it.";
+		}
+		
+		if(deadliestPlacesContentChecker(currentInput))
+		{
+			return "You can cross that off your list, because you're not going there.";
 		}
 		
 		return nextTalk;
