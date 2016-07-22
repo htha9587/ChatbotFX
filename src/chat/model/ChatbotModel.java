@@ -3,7 +3,7 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 4.3
+ * Version 4.4
  * @author htha9587
  * 7-21-16
  * Makes up the Framework for the ChatbotFX program.
@@ -24,7 +24,11 @@ public class ChatbotModel
 	private String favoriteGamesContent;
 	private String favoriteFoodContent;
 	private String favoriteFilmQuotes;
-	
+	private String nasaInventions;
+	private String biologyScientists;
+	private String memeContent;
+	private String spookyDeaths;
+	private String badJobs;
 	
 	/**
 	 * Creates instance of ChatbotModel with userName.
@@ -44,6 +48,10 @@ public class ChatbotModel
 		this.favoriteGamesContent = "Favorite Games";
 		this.favoriteFoodContent = "Favorite Foods";
 		this.favoriteFilmQuotes = "Favorite Film Quotes";
+		this.nasaInventions = "Nasa Inventions";
+		this.biologyScientists = "Biology Scientists";
+		this.memeContent = "2007 Memes";
+		this.badJobs = "Bad Jobs";
 		
 		buildSoftwareList();
 		buildPoliticalList();
@@ -364,6 +372,131 @@ public class ChatbotModel
 	}
 	
 	/**
+	 * Checker for whether or not the user is typing in NASA Invention related topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean nasaInventionsContentChecker(String currentInput)
+	{
+		boolean isNASA = false;
+		
+		if(currentInput.equals("Memory Foam") 
+				|| currentInput.equals("Anti-corrosion Coating") 
+				|| currentInput.equals("ArterioVision") 
+				|| currentInput.equals("Cochlear Implants")
+		     	|| currentInput.equals("Scratch-resistant Eyeglass Lenses")
+                || currentInput.equals("Emulsified Iron")
+                || currentInput.equals("Insulin Pump")
+                || currentInput.equals("Lifeshears")
+                || currentInput.equals("Charge-coupled Device")
+                || currentInput.equals("Water Filters"))
+		{
+			isNASA = true;
+		}
+		return isNASA;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in Biology Scientists related topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean biologyScientistsContentChecker(String currentInput)
+	{
+		boolean isBio = false;
+		
+		if(currentInput.equals("Charles Darwin") 
+				|| currentInput.equals("Gregor Mendel") 
+				|| currentInput.equals("Aristotle") 
+				|| currentInput.equals("Hippocrates")
+		     	|| currentInput.equals("Robert Hooke")
+                || currentInput.equals("Louis Pasteur")
+                || currentInput.equals("Edward Jenner")
+                || currentInput.equals("Claude Bernard")
+                || currentInput.equals("Robert Brown")
+                || currentInput.equals("Galen"))
+		{
+			isBio = true;
+		}
+		return isBio;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in 2007 meme related topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean memeContentChecker(String currentInput)
+	{
+		boolean isMeme = false;
+		
+		if(currentInput.equals("Squadala!") 
+				|| currentInput.equals("Mah Boi!") 
+				|| currentInput.equals("Gee, It sure is boring around here!") 
+				|| currentInput.equals("Enclosed Instruction Book")
+		     	|| currentInput.equals("I can't wait to bomb some Dodongos!")
+                || currentInput.equals("Everything about Hotel Mario")
+                || currentInput.equals("YTP")
+                || currentInput.equals("Pingas!")
+                || currentInput.equals("These are the faces of evil!")
+                || currentInput.equals("Enough!"))
+		{
+			isMeme = true;
+		}
+		return isMeme;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in spooky death related topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean spookyDeathContentChecker(String currentInput)
+	{
+		boolean isDeath = false;
+		
+		if(currentInput.equals("Drowning") 
+				|| currentInput.equals("Immolation") 
+				|| currentInput.equals("Spaghettification") 
+				|| currentInput.equals("Inquisition Tortures")
+		     	|| currentInput.equals("Shredding")
+                || currentInput.equals("Amusement Park Rides")
+                || currentInput.equals("Decapitation")
+                || currentInput.equals("Vacuum Exposure")
+                || currentInput.equals("Viruses")
+                || currentInput.equals("Acid"))
+		{
+			isDeath = true;
+		}
+		return isDeath;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in bad job related topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean badJobsContentChecker(String currentInput)
+	{
+		boolean isBad = false;
+		
+		if(currentInput.equals("Mail Carrier") 
+				|| currentInput.equals("Firefighter") 
+				|| currentInput.equals("Taxi Driver") 
+				|| currentInput.equals("Corrections Officer")
+		     	|| currentInput.equals("Photojournalist")
+                || currentInput.equals("Broadcaster")
+                || currentInput.equals("Cook")
+                || currentInput.equals("Lumberjack")
+                || currentInput.equals("Garbageman?")
+                || currentInput.equals("Newspaper Reporter"))
+		{
+			isBad = true;
+		}
+		return isBad;
+	}
+	
+	/**
 	 * Processes conversation between end user and ChatbotFX.
 	 */
 	public String processConversation(String currentInput)
@@ -419,6 +552,31 @@ public class ChatbotModel
 		if(favoriteFilmQuotesContentChecker(currentInput))
 		{
 			return "Another Zinger!";
+		}
+		
+		if(nasaInventionsContentChecker(currentInput))
+		{
+			return "What would we do without it?!";
+		}
+		
+		if(biologyScientistsContentChecker(currentInput))
+		{
+			return "What of his or her discoveries?";
+		}
+		
+		if(memeContentChecker(currentInput))
+		{
+			return "Is that a reference for reference sake?";
+		}
+		
+		if(spookyDeathContentChecker(currentInput))
+		{
+			return "Would you even want to experience that?";
+		}
+		
+		if(badJobsContentChecker(currentInput))
+		{
+			return "Is it really that bad?";
 		}
 		
 		return nextTalk;
