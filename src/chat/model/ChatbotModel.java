@@ -3,7 +3,7 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 4.6
+ * Version 4.7
  * @author htha9587
  * 7-25-16
  * Makes up the Framework for the ChatbotFX program.
@@ -39,6 +39,11 @@ public class ChatbotModel
 	private String extremeLifeforms;
 	private String bestPainters;
 	private String filmAI;
+	private String lifePointers;
+	private String influentialInstruments;
+	private String badFandoms;
+	private String groupMashups;
+	private String bestPastimes;
 	
 	/**
 	 * Creates instance of ChatbotModel with userName.
@@ -72,6 +77,11 @@ public class ChatbotModel
 		this.extremeLifeforms = "Extreme Lifeforms";
 		this.bestPainters = "Best Painters";
 		this.filmAI = "Film AI";
+		this.lifePointers = "Life Pointers";
+		this.influentialInstruments = "Influential Instruments";
+		this.badFandoms = "Bad Fandoms?";
+		this.groupMashups = "Group Mashups";
+		this.bestPastimes = "Best Pastimes";
 		
 		buildSoftwareList();
 		buildPoliticalList();
@@ -768,6 +778,131 @@ public class ChatbotModel
 	}
 	
 	/**
+	 * Checker for whether or not the user is typing in life pointer topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean lifePointersChecker(String currentInput)
+	{
+		boolean isPointer = false;
+		
+		if(currentInput.equals("Be comfortable in your own skin") 
+				|| currentInput.equals("Appreciate what you have and never compare yourself with others") 
+				|| currentInput.equals("See the positive in every situation") 
+				|| currentInput.equals("Let go of your need to control")
+		     	|| currentInput.equals("Drop the resentment within")
+                || currentInput.equals("Live in the moment")
+                || currentInput.equals("Avoid overanalyzing")
+                || currentInput.equals("Stop worrying about the future")
+                || currentInput.equals("Drop your ego and be true")
+                || currentInput.equals("Have an open mind"))
+		{
+			isPointer = true;
+		}
+		return isPointer;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in influential instrument topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean influentialInstrumentsChecker(String currentInput)
+	{
+		boolean isInstrument = false;
+		
+		if(currentInput.equals("Electric Guitar") 
+				|| currentInput.equals("Piano") 
+				|| currentInput.equals("Drums") 
+				|| currentInput.equals("Saxophone")
+		     	|| currentInput.equals("Bass Guitar")
+                || currentInput.equals("Voilin")
+                || currentInput.equals("Acoustic Guitar")
+                || currentInput.equals("Flute")
+                || currentInput.equals("Guitar")
+                || currentInput.equals("Clarinet"))
+		{
+			isInstrument = true;
+		}
+		return isInstrument;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in questionable topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean badFandomChecker(String currentInput)
+	{
+		boolean isFandom = false;
+		
+		if(currentInput.equals("Sonic Fans") 
+				|| currentInput.equals("90s Kids") 
+				|| currentInput.equals("Feminists") 
+				|| currentInput.equals("Saxophone")
+		     	|| currentInput.equals("Weaboo's")
+                || currentInput.equals("Worst of the Worst")
+                || currentInput.equals("Extremists")
+                || currentInput.equals("Haters")
+                || currentInput.equals("Bronies?")
+                || currentInput.equals("What else was there..."))
+		{
+			isFandom = true;
+		}
+		return isFandom;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in music group mashups topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean groupMashupChecker(String currentInput)
+	{
+		boolean isMashup = false;
+		
+		if(currentInput.equals("Stayin' Alive In The Wall") 
+				|| currentInput.equals("Gimmie Shelter In The Deep") 
+				|| currentInput.equals("Golden Teardrops") 
+				|| currentInput.equals("Hey Scientist")
+		     	|| currentInput.equals("Technological Griefers")
+                || currentInput.equals("Come Closer")
+                || currentInput.equals("Thunder Busters")
+                || currentInput.equals("Panama Beat")
+                || currentInput.equals("Billie Jean Get Lucky")
+                || currentInput.equals("Whole Lotta Helter Skelter"))
+		{
+			isMashup = true;
+		}
+		return isMashup;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in best pastime topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean bestPastimeChecker(String currentInput)
+	{
+		boolean isPastime = false;
+		
+		if(currentInput.equals("Listening to Music") 
+				|| currentInput.equals("Surfing the Web") 
+				|| currentInput.equals("Relaxing") 
+				|| currentInput.equals("Watching TV")
+		     	|| currentInput.equals("Technological Griefers")
+                || currentInput.equals("Playing Video Games")
+                || currentInput.equals("Reading")
+                || currentInput.equals("Sleeping")
+                || currentInput.equals("Going to a Movie")
+                || currentInput.equals("Swimming"))
+		{
+			isPastime = true;
+		}
+		return isPastime;
+	}
+	
+	/**
 	 * Processes conversation between end user and ChatbotFX.
 	 */
 	public String processConversation(String currentInput)
@@ -898,6 +1033,31 @@ public class ChatbotModel
 		if(filmAIChecker(currentInput))
 		{
 			return "Are you saying I'm not as memorable?";
+		}
+		
+		if(lifePointersChecker(currentInput))
+		{
+			return "I wonder if that's possible to program...";
+		}
+		
+		if(influentialInstrumentsChecker(currentInput))
+		{
+			return "Know any tunes?";
+		}
+		
+		if(badFandomChecker(currentInput))
+		{
+			return "Don't let hate consume you.";
+		}
+		
+		if(groupMashupChecker(currentInput))
+		{
+			return "What do you think it would sound like with another song in the mix?";
+		}
+		
+		if(bestPastimeChecker(currentInput))
+		{
+			return "I don't do that.";
 		}
 		
 		return nextTalk;
