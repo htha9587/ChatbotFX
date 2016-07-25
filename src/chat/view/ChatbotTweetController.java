@@ -9,9 +9,9 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
 /**
- * Version 4.5
+ * Version 4.6
  * @author htha9587
- * 7-22-16
+ * 7-25-16
  *
  */
 public class ChatbotTweetController implements Initializable

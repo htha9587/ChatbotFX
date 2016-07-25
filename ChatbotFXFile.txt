@@ -1,54 +1,133 @@
 Want me to save something of our conversation?
-User: Jira
-ChatbotFX: Think you might use that someday?
-User: Rubio
+User: vote
 ChatbotFX: That surely is interesting!
-User: asdf
+User: sdf
 ChatbotFX: Stop mashing my keys!
+User: Java EE
+ChatbotFX: Think you might use that someday?
 User: Blade Runner Soundtrack
 ChatbotFX: Is that a favorite of yours?
-User: Interstellar
+User: Solaris
 ChatbotFX: That one's a novel!
 User: Ray Bradbury
 ChatbotFX: His work is really good!
-User: Classical
+User: Folk
 ChatbotFX: Good taste!
-User: 
-ChatbotFX: Anything else that you like?
-User: 
-ChatbotFX: Anything else that you like?
-User: Mass Effect Series
+User: Doom Series
 ChatbotFX: Never tried it.
-User: Eggs
+User: Salad
 ChatbotFX: Shame AI's cannot eat!
-User: Good morning, Vietnam!
+User: They call me Mister Tibbs!
 ChatbotFX: Another Zinger!
-User: Memory Foam
+User: Lifeshears
 ChatbotFX: What would we do without it?!
-User: Galen
+User: Aristotle
 ChatbotFX: What of his or her discoveries?
-User: Mah Boi!
+User: YTP
 ChatbotFX: Is that a reference for reference sake?
-User: Acid
+User: Drowning
 ChatbotFX: Would you even want to experience that?
-User: Cook
+User: Lumberjack
 ChatbotFX: Is it really that bad?
-User: Space
-User: SpaceCount : 10
-@Mister Monster: RT @geniuskane: Income gap between Louisiana’s wealthiest and poorest families widened after Great Recession, #incomeinequality https://t.c…
-@Lena Murashkintseva: @N_Jakobsen the ONE without a doubt | I'm just in a different space and I choose to embrace it working with @faceliftao
-@Nicola Gill: ?? live #milf #black gang bang
-#horse
-? https://t.co/sqnNRhzBKd https://t.co/x2PlvTACJm
-@Paul Ginsberg: @AC360 And Donald Trump will sell advertising space on the wall ...
-@Laur ?: RT @softghxtto: I don't give a damn about what's happening in the world today. normally I do. but rn I'm in my own space atm
-@Carly: RT @softghxtto: I don't give a damn about what's happening in the world today. normally I do. but rn I'm in my own space atm
-@ROWx2 FIGHT THE POYO: @ChuckConcrete @Zerokohai especially with how they're being on a roll recently. Even Space Dandy was interesting from a creation standpoint.
-@frouke: RT @crystalsmarie: there's a space there for kira :( https://t.co/ZjUwBwW60B
-@Tommy Crash: RT @Space_Station: The Biomolecule Sequencer for @ISS_Research seeks to demo DNA sequencing in space possibly benefiting health.
-https://t.…
-@The_Antique_Leak: Vintage lot of 10 BIG LITTLE BOOKS Red Ryder-Flipper-Woody-Aquaman-Space Ghost+ https://t.co/x9mrkYl37b https://t.co/GeSuMFgvnF
+User: Seattle
+ChatbotFX: Better make the most out of that place.
+User: Loss
+ChatbotFX: Please don't ruin this conversation by being cringy.
+User: Trees
+ChatbotFX: You be sure to study that real well, okay?
+User: McLaren F1
+ChatbotFX: Good luck finding a place trying to top speed it.
+User: Russia
+ChatbotFX: You can cross that off your list, because you're not going there.
+User: Unforgiven
+ChatbotFX: Maybe I should give that a try!
+User: IMBH
+ChatbotFX: Not sure what could be stranger.
+User: Mankind
+ChatbotFX: Not impressed.
+User: Raphael
+ChatbotFX: (Mocking) Will I ever be like the old masters?
+User: HAL 9000
+ChatbotFX: Are you saying I'm not as memorable?
+User: 25 down, 5 to go.
+User: 25 down, 5 to go.
+User: Metal Gear Solid
+User: Metal Gear SolidCount : 10
+@David Rees: Been watching Escape from New York. I guess this is what Metal Gear Solid looks like without my rose-tinted glasses.
+@Rontro Gaming: Metal Gear Solid Summer of Retro Episode 3 https://t.co/i42eO1oeWv via @YouTube
+@Kiba113: @AllyOrNotAlly are you a metal gear solid fan?
+@Video Games Galaxy: #Game Metal Gear Solid The legacy Collection for #Playstation3 Brand New! https://t.co/GJ05Z2Z213 #VideoGames #PS3 https://t.co/zKRUxCsrKz
+@GAMEHOOD: Let's play Metal Gear Solid V : The Phantom Pain - Streaming episode 01 - HD: https://t.co/SNBaIbUP3j via @YouTube
+@matheus van der ham: metal gear solid tem uma trilha sonora do caceta
+@Baja Blast: @DudeMcPunchy @HerringwaySP didn't you ever see the youtube video of the sword cutting the bullets like in metal gear solid
+@My Playstation Walls: Metal Gear Solid V: The Phantom Pain Wallpaper https://t.co/N1CtkaWJhJ  #wallpapers
+@Acid-Snake: RT @abrancito777: Que os gustaría más en Metal Gear Solid?
+@thunder death 2: RT @WOngena: RT @EleenaFisher TIL that every Metal Gear Solid character is David Bowie. https://t.co/urJMtauDlm | Interesting, I did not kn…
 
-User: I now have 15 topics, halfway there!
-User: I now have 15 topics, halfway there!
+User: 
+User: vote
+ChatbotFX: That surely is interesting!
+User: sdf
+ChatbotFX: Stop mashing my keys!
+User: Java EE
+ChatbotFX: Think you might use that someday?
+User: Blade Runner Soundtrack
+ChatbotFX: Is that a favorite of yours?
+User: Solaris
+ChatbotFX: That one's a novel!
+User: Ray Bradbury
+ChatbotFX: His work is really good!
+User: Folk
+ChatbotFX: Good taste!
+User: Doom Series
+ChatbotFX: Never tried it.
+User: Salad
+ChatbotFX: Shame AI's cannot eat!
+User: They call me Mister Tibbs!
+ChatbotFX: Another Zinger!
+User: Lifeshears
+ChatbotFX: What would we do without it?!
+User: Aristotle
+ChatbotFX: What of his or her discoveries?
+User: YTP
+ChatbotFX: Is that a reference for reference sake?
+User: Drowning
+ChatbotFX: Would you even want to experience that?
+User: Lumberjack
+ChatbotFX: Is it really that bad?
+User: Seattle
+ChatbotFX: Better make the most out of that place.
+User: Loss
+ChatbotFX: Please don't ruin this conversation by being cringy.
+User: Trees
+ChatbotFX: You be sure to study that real well, okay?
+User: McLaren F1
+ChatbotFX: Good luck finding a place trying to top speed it.
+User: Russia
+ChatbotFX: You can cross that off your list, because you're not going there.
+User: Unforgiven
+ChatbotFX: Maybe I should give that a try!
+User: IMBH
+ChatbotFX: Not sure what could be stranger.
+User: Mankind
+ChatbotFX: Not impressed.
+User: Raphael
+ChatbotFX: (Mocking) Will I ever be like the old masters?
+User: HAL 9000
+ChatbotFX: Are you saying I'm not as memorable?
+User: 25 down, 5 to go.
+User: 25 down, 5 to go.
+User: Metal Gear Solid
+User: Metal Gear SolidCount : 10
+@David Rees: Been watching Escape from New York. I guess this is what Metal Gear Solid looks like without my rose-tinted glasses.
+@Rontro Gaming: Metal Gear Solid Summer of Retro Episode 3 https://t.co/i42eO1oeWv via @YouTube
+@Kiba113: @AllyOrNotAlly are you a metal gear solid fan?
+@Video Games Galaxy: #Game Metal Gear Solid The legacy Collection for #Playstation3 Brand New! https://t.co/GJ05Z2Z213 #VideoGames #PS3 https://t.co/zKRUxCsrKz
+@GAMEHOOD: Let's play Metal Gear Solid V : The Phantom Pain - Streaming episode 01 - HD: https://t.co/SNBaIbUP3j via @YouTube
+@matheus van der ham: metal gear solid tem uma trilha sonora do caceta
+@Baja Blast: @DudeMcPunchy @HerringwaySP didn't you ever see the youtube video of the sword cutting the bullets like in metal gear solid
+@My Playstation Walls: Metal Gear Solid V: The Phantom Pain Wallpaper https://t.co/N1CtkaWJhJ  #wallpapers
+@Acid-Snake: RT @abrancito777: Que os gustaría más en Metal Gear Solid?
+@thunder death 2: RT @WOngena: RT @EleenaFisher TIL that every Metal Gear Solid character is David Bowie. https://t.co/urJMtauDlm | Interesting, I did not kn…
+
 Watch as I save to a file!

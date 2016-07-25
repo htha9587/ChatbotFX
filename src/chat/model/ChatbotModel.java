@@ -3,9 +3,9 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 4.5
+ * Version 4.6
  * @author htha9587
- * 7-22-16
+ * 7-25-16
  * Makes up the Framework for the ChatbotFX program.
  */
 
@@ -34,6 +34,11 @@ public class ChatbotModel
 	private String dataTopics;
 	private String fastestCars;
 	private String deadliestPlaces;
+	private String bestWesterns;
+	private String strangeThings;
+	private String extremeLifeforms;
+	private String bestPainters;
+	private String filmAI;
 	
 	/**
 	 * Creates instance of ChatbotModel with userName.
@@ -62,6 +67,11 @@ public class ChatbotModel
 		this.dataTopics = "Data Topics";
 		this.fastestCars = "Fastest Cars";
 		this.deadliestPlaces = "Deadliest Places";
+		this.bestWesterns = "Best Westerns";
+		this.strangeThings = "Strange Things";
+		this.extremeLifeforms = "Extreme Lifeforms";
+		this.bestPainters = "Best Painters";
+		this.filmAI = "Film AI";
 		
 		buildSoftwareList();
 		buildPoliticalList();
@@ -369,7 +379,7 @@ public class ChatbotModel
 				|| currentInput.equals("This is pretty much the worst thing ever made.") 
 				|| currentInput.equals("They call me Mister Tibbs!") 
 				|| currentInput.equals("Elementary, my dear Watson.")
-		     	|| currentInput.equals("Gentlemen, you can't fight in here! This is the war room!")
+		     	|| currentInput.equals("Gentlemen, you can't fight in here! This is the war room!") 
                 || currentInput.equals("That'll do, pig. That'll do.")
                 || currentInput.equals("Good morning, Vietnam!")
                 || currentInput.equals("Go ahead, make my day.")
@@ -632,6 +642,132 @@ public class ChatbotModel
 	}
 	
 	/**
+	 * Checker for whether or not the user is typing in best western topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean bestWesternChecker(String currentInput)
+	{
+		boolean isWest = false;
+		
+		if(currentInput.equals("Rancho Notorious") 
+				|| currentInput.equals("The Assassination of Jesse James by the Coward Robert Ford") 
+				|| currentInput.equals("Red River") 
+				|| currentInput.equals("High Noon")
+		     	|| currentInput.equals("Unforgiven")
+                || currentInput.equals("McCabe & Mrs Miller")
+                || currentInput.equals("Butch Cassidy and the Sundance Kid")
+                || currentInput.equals("The Searchers")
+                || currentInput.equals("The Wild Bunch")
+                || currentInput.equals("Once Upon a Time in the West"))
+		{
+			isWest = true;
+		}
+		return isWest;
+	}
+	
+
+	/**
+	 * Checker for whether or not the user is typing in strange topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean strangeThingsChecker(String currentInput)
+	{
+		boolean isStrange = false;
+		
+		if(currentInput.equals("Antimatter") 
+				|| currentInput.equals("IMBH") 
+				|| currentInput.equals("Cosmic Microwave Background") 
+				|| currentInput.equals("Dark Matter")
+		     	|| currentInput.equals("Exoplanets")
+                || currentInput.equals("Gravitational Waves")
+                || currentInput.equals("Galactic Cannibalism")
+                || currentInput.equals("Neutrinos")
+                || currentInput.equals("Quasars")
+                || currentInput.equals("Vacuum Energy"))
+		{
+			isStrange = true;
+		}
+		return isStrange;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in extreme lifeform topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean extremeLifeChecker(String currentInput)
+	{
+		boolean isExtreme = false;
+		
+		if(currentInput.equals("Blue Whale") 
+				|| currentInput.equals("Playtpus") 
+				|| currentInput.equals("Komodo Dragon") 
+				|| currentInput.equals("Ocean Quahog")
+		     	|| currentInput.equals("MRL Mouse")
+                || currentInput.equals("Pompeii Worm")
+                || currentInput.equals("Deinococcus Radiodurans")
+                || currentInput.equals("Tardigrade")
+                || currentInput.equals("Archaea")
+                || currentInput.equals("Mankind"))
+		{
+			isExtreme = true;
+		}
+		return isExtreme;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in best painter topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean bestPainterChecker(String currentInput)
+	{
+		boolean isPainter = false;
+		
+		if(currentInput.equals("Paul Cezanne") 
+				|| currentInput.equals("Jan Vermeer") 
+				|| currentInput.equals("August Renoir") 
+				|| currentInput.equals("Raphael")
+		     	|| currentInput.equals("Pablo Picasso")
+                || currentInput.equals("Claude Monet")
+                || currentInput.equals("Michelangelo")
+                || currentInput.equals("Rembrandt")
+                || currentInput.equals("Vincent Van Gogh")
+                || currentInput.equals("Leonardo Da Vinci"))
+		{
+			isPainter = true;
+		}
+		return isPainter;
+	}
+	
+	/**
+	 * Checker for whether or not the user is typing in film AI topics.
+	 * @param currentInput
+	 * @return
+	 */
+	public boolean filmAIChecker(String currentInput)
+	{
+		boolean isAI = false;
+		
+		if(currentInput.equals("HAL 9000") 
+				|| currentInput.equals("David") 
+				|| currentInput.equals("Replicants") 
+				|| currentInput.equals("Colossus")
+		     	|| currentInput.equals("Proteus IV")
+                || currentInput.equals("The Puppet Master")
+                || currentInput.equals("The Matrix")
+                || currentInput.equals("Maria")
+                || currentInput.equals("Skynet")
+                || currentInput.equals("SAL 9000"))
+		{
+			isAI = true;
+		}
+		return isAI;
+	}
+	
+	/**
 	 * Processes conversation between end user and ChatbotFX.
 	 */
 	public String processConversation(String currentInput)
@@ -737,6 +873,31 @@ public class ChatbotModel
 		if(deadliestPlacesContentChecker(currentInput))
 		{
 			return "You can cross that off your list, because you're not going there.";
+		}
+		
+		if(bestWesternChecker(currentInput))
+		{
+			return "Maybe I should give that a try!";
+		}
+		
+		if(strangeThingsChecker(currentInput))
+		{
+			return "Not sure what could be stranger.";
+		}
+		
+		if(extremeLifeChecker(currentInput))
+		{
+			return "Not impressed.";
+		}
+		
+		if(bestPainterChecker(currentInput))
+		{
+			return "(Mocking) Will I ever be like the old masters?";
+		}
+		
+		if(filmAIChecker(currentInput))
+		{
+			return "Are you saying I'm not as memorable?";
 		}
 		
 		return nextTalk;
