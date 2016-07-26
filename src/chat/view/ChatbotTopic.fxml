@@ -5,7 +5,6 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import org.controlsfx.control.HyperlinkLabel?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@ChatbotTopic.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat.view.ChatbotTopicController">
    <children>
@@ -19,7 +18,7 @@
          </columnResizePolicy>
       </TableView>
       <Label fx:id="TopicLabel" layoutX="228.0" layoutY="66.0" text="Topic List" />
-      <HyperlinkLabel fx:id="HelpLabel" layoutX="418.0" layoutY="13.0" prefHeight="48.0" prefWidth="74.0" text="Help" />
-      <Button fx:id="aboutButton" layoutX="499.0" layoutY="20.0" mnemonicParsing="false" text="About" />
+      <Button fx:id="aboutButton" layoutX="499.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleAbout" text="About" />
+      <Button layoutX="404.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleHelpButton" text="Help" />
    </children>
 </AnchorPane>

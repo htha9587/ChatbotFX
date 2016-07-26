@@ -43,7 +43,7 @@ import twitter4j.TwitterFactory;
 import twitter4j.User;
 
 /**
- * Version 4.8
+ * Version 4.9
  * @author htha9587
  * 7-26-16
  * 
@@ -488,7 +488,7 @@ public class ChatbotViewController
 		Scene scene = new Scene(rootLayout);
 		Stage tableView = new Stage();
 		tableView.setScene(scene);
-		tableView.setTitle("Can you find yourself here?"); //Sets title.
+		tableView.setTitle("Topic List"); //Sets title.
 		tableView.getIcons().add(new Image("file:resources/images/HAL.png")); //Sets Icon on the top of the window.
 	    tableView.show();
 		}
@@ -498,7 +498,6 @@ public class ChatbotViewController
 	}
 		
 }
-	
 	
 	//Getter for the text field.
 	public TextField getTextField()
