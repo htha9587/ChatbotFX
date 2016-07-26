@@ -43,13 +43,13 @@ import twitter4j.TwitterFactory;
 import twitter4j.User;
 
 /**
- * Version 4.7
+ * Version 4.8
  * @author htha9587
- * 7-25-16
- * @param <T>
+ * 7-26-16
+ * 
  */
 
-public class ChatbotViewController<T> 
+public class ChatbotViewController
 {
 	@FXML
 	private WebView webView;
@@ -89,7 +89,6 @@ public class ChatbotViewController<T>
 	private BufferedReader bufferedReader;
 	private String path;
 	private String file;
-	private T data;
 	private Twitter chatbotTwitter;
 	//private ChatbotViewController baseController;
 	protected static final User List = null;
@@ -478,6 +477,28 @@ public class ChatbotViewController<T>
 		
 }
 	
+	@FXML
+	private void handleTopicButton(ActionEvent event)
+	{
+		try
+		{
+			//Loads FXML file.
+		FXMLLoader loader = new FXMLLoader(ChatbotRunner.class.getResource("view/ChatbotTopic.fxml"));
+		rootLayout = (AnchorPane) loader.load();
+		Scene scene = new Scene(rootLayout);
+		Stage tableView = new Stage();
+		tableView.setScene(scene);
+		tableView.setTitle("Can you find yourself here?"); //Sets title.
+		tableView.getIcons().add(new Image("file:resources/images/HAL.png")); //Sets Icon on the top of the window.
+	    tableView.show();
+		}
+	catch(IOException e)
+	{
+		e.printStackTrace();
+	}
+		
+}
+	
 	
 	//Getter for the text field.
 	public TextField getTextField()
@@ -485,9 +506,5 @@ public class ChatbotViewController<T>
 		return chatField;
 	}
 	
-	public T getData()
-	{
-		return data;
-	}
 	
 }
