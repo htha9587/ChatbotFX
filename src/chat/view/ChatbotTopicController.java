@@ -2,9 +2,12 @@ package chat.view;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
-
 import chat.ChatbotRunner;
+import chat.model.Topic;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,24 +16,32 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.TableColumn;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 /**
- * Version 4.9
+ * Version 5.0
  * @author htha9587
- * 7-26-16
+ * 7-27-16
  */
 
 
 public class ChatbotTopicController implements Initializable
 {
 	@FXML
-	private TableView tableView;
+	private TableView<Topic> tableView;
+	
+	@FXML
+	private TableColumn<Topic, String> topic;
+	
+	@FXML
+	private TableColumn<Topic, String> item;
 	
 	private ObservableList data;
 	private Text ActionStatus;
@@ -39,9 +50,26 @@ public class ChatbotTopicController implements Initializable
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
 	{
-		
-		
+		//TableView and data properties.
+		topic.setCellValueFactory(new PropertyValueFactory<Topic, String>("topic"));
+		item.setCellValueFactory(new PropertyValueFactory<Topic, String>("item"));
+		tableView.setItems(list);
+		tableView.setEditable(false);
 	}
+	
+	// Loads table with topics and their respective items.
+	private ObservableList<Topic> list = FXCollections.observableArrayList(
+			new Topic("2016 Election", "Trump"),
+			new Topic("2016 Election", "Clinton"),
+			new Topic("2016 Election", "Scott Walker"),
+			new Topic("2016 Election", "Biden"),
+			new Topic("2016 Election", "Carson"),
+			new Topic("2016 Election", "Rubio"),
+			new Topic("2016 Election", "Fiorina"),
+			new Topic("2016 Election", "Sanders"),
+			new Topic("2016 Election", "vote"),
+			new Topic("2016 Election", "11/4/16")
+		);
 	
 	@FXML
 	private void handleAbout(ActionEvent event)
@@ -79,8 +107,4 @@ public class ChatbotTopicController implements Initializable
 		alert.showAndWait();
 	}
 	
-	
 	}
-	
-
-
