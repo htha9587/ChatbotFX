@@ -3,7 +3,7 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 5.0
+ * Version 5.1
  * @author htha9587
  * 7-27-16
  * Makes up the Framework for the ChatbotFX program.
@@ -343,7 +343,7 @@ public class ChatbotModel
                 || currentInput.equals("Doom Series")
                 || currentInput.equals("Quake Series")
                 || currentInput.equals("Crysis Series")
-                || currentInput.equals("Halo Series")
+                || currentInput.equals("Metal Gear Series")
                 || currentInput.equals("The Witcher Series"))
 		{
 			isGame = true;
@@ -386,15 +386,15 @@ public class ChatbotModel
 		boolean isQuote = false;
 		
 		if(currentInput.equals("I drink your milkshake!") 
-				|| currentInput.equals("This is pretty much the worst thing ever made.") 
+				|| currentInput.equals("This is the worst thing ever made.") 
 				|| currentInput.equals("They call me Mister Tibbs!") 
 				|| currentInput.equals("Elementary, my dear Watson.")
-		     	|| currentInput.equals("Gentlemen, you can't fight in here! This is the war room!") 
+		     	|| currentInput.equals("Gentlemen, you can't fight in here!")
                 || currentInput.equals("That'll do, pig. That'll do.")
                 || currentInput.equals("Good morning, Vietnam!")
                 || currentInput.equals("Go ahead, make my day.")
-                || currentInput.equals("Pay no attention to that man behind the curtain!")
-                || currentInput.equals("What we've got here is a failure to communicate."))
+                || currentInput.equals("Pay no attention behind the curtain!")
+                || currentInput.equals("Failure to Communicate!"));
 		{
 			isQuote = true;
 		}
