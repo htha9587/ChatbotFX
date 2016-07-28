@@ -7,9 +7,9 @@ import java.util.Optional;
 import chat.view.ChatbotViewController;
 
 /**
- * Version 5.1
+ * Version 5.2
  * @author htha9587
- * 7-27-16
+ * 7-28-16
  */
 
 import javafx.application.Application;
@@ -32,7 +32,7 @@ public class ChatbotRunner extends Application
 	public void start(Stage primaryStage) 
 	{	
 		//Sets up dialog before main application.
-		TextInputDialog dialog = new TextInputDialog("Harrison");
+		TextInputDialog dialog = new TextInputDialog("");
 		dialog.setTitle("ChatbotFX");
 		dialog.setHeaderText("This message brought to you by ChatbotFX.");
 		dialog.setContentText("What's your name?");

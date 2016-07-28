@@ -3,9 +3,9 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 5.1
+ * Version 5.2
  * @author htha9587
- * 7-27-16
+ * 7-28-16
  * Makes up the Framework for the ChatbotFX program.
  */
 
@@ -467,7 +467,7 @@ public class ChatbotModel
 		     	|| currentInput.equals("I can't wait to bomb some Dodongos!")
                 || currentInput.equals("Everything about Hotel Mario")
                 || currentInput.equals("YTP")
-                || currentInput.equals("Pingas!")
+                || currentInput.equals("Snooping as usual I see!")
                 || currentInput.equals("These are the faces of evil!")
                 || currentInput.equals("Enough!"))
 		{
