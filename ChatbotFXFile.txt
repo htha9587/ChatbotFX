@@ -1,4 +1,4 @@
-Want me to save something of our conversation?Want me to save something of our conversation?
+Want me to save something of our conversation?Want me to save something of our conversation?Want me to save something of our conversation?Want me to save something of our conversation?
 User: Trump
 ChatbotFX: That surely is interesting!
 User: Angular JS
@@ -482,4 +482,56 @@ https://t.co/lJmBYlG7DD
 @Rostislav Georgiev: RT @sam_brannen: #Spring Framework 5.0 M1 released w/ support for #reactive programming models and #JUnit 5. Feedback is welcome! https://t…
 @Michael T Minella: RT @sam_brannen: #Spring Framework 5.0 M1 released w/ support for #reactive programming models and #JUnit 5. Feedback is welcome! https://t…
 
+Watch as I save to a file!
+null
+
+User: Swimming
+ChatbotFX: I don't do that.
+User: Unit Testing
+ChatbotFX: Think you might use that someday?
+User: High Noon
+ChatbotFX: Maybe I should give that a try!
+User: Cody Henrichsen
+User: Cody HenrichsenCount : 0
+
+User: CodyHenrichsen
+User: CodyHenrichsenCount : 10
+@CTEC Chatbot: ChatbotFX: I now have my topic list complete!#APCSROCKS @CTECNow Thanks @ cscheerleader & @codyhenrichsen!
+@CTEC Chatbot: ChatbotFX: Which means I only have 30 unique responses.#APCSROCKS @CTECNow Thanks @ cscheerleader & @codyhenrichsen!
+@CTEC Chatbot: ChatbotFX: I encountered a weird bug with film quotes...#APCSROCKS @CTECNow Thanks @ cscheerleader & @codyhenrichsen!
+@CTEC Chatbot: ChatbotFX: Now have twenty topics in the list!#APCSROCKS @CTECNow Thanks @ cscheerleader & @codyhenrichsen!
+@CTEC Chatbot: ChatbotFX: Testing another feature...#APCSROCKS @CTECNow Thanks @ cscheerleader & @codyhenrichsen!
+@CTEC Chatbot: ChatbotFX: Now testing my topic list...#APCSROCKS @CTECNow Thanks @ cscheerleader & @codyhenrichsen!
+@CTEC Chatbot: ChatbotFX: My model class has more than a thousand lines of code!#APCSROCKS @CTECNow Thanks @ cscheerleader & @codyhenrichsen!
+@CTEC Chatbot: ChatbotFX: Finished!#APCSROCKS @CTECNow Thanks @ cscheerleader & @codyhenrichsen!
+@CTEC Chatbot: ChatbotFX: 25 down, 5 to go.#APCSROCKS @CTECNow Thanks @ cscheerleader & @codyhenrichsen!
+@CTEC Chatbot: ChatbotFX: I now have twenty topics, ten left.#APCSROCKS @CTECNow Thanks @ cscheerleader & @codyhenrichsen!
+
+User: Deus Ex: Mankind Divided
+User: Deus Ex: Mankind DividedCount : 10
+@DIVOGaming: RT @pcgamer: PC Gamer UK's September issue is out now! Here's what's inside: https://t.co/BnQC6pkW1y https://t.co/L1QhVr5cZ6
+@Master Red: RT @Blogocio: Deus Ex: Mankind Divided, nuevos detalles sobre personajes clave y cambios en el argumento https://t.co/zzfO067nbB https://t.…
+@SteamProfile.com: #Steam Deus Ex: Mankind Divided has gone gold https://t.co/G8pZZReuf9
+@Danda: RT @PCGamesN: Deus Ex: Mankind Divided has gone gold https://t.co/TsaRhMCzWt https://t.co/WiVAM8CDTv
+@MartianKat #GS: RT @PCGamesN: Deus Ex: Mankind Divided has gone gold https://t.co/TsaRhMCzWt https://t.co/WiVAM8CDTv
+@PCGamesN: Deus Ex: Mankind Divided has gone gold https://t.co/TsaRhMCzWt https://t.co/WiVAM8CDTv
+@JVL: Deus Ex : Mankind Divided est gold #PS4 #XboxOne https://t.co/bH2V948KVX
+@Yerli Ninja Bot: RT @BSCLive: Deus Ex: Mankind Divided'?n Yap?m? Tamamland?
+https://t.co/bqH49jSy7f https://t.co/yhR7tCM8DI
+@Noticias Venezuela: Completan el desarrollo de Deus Ex: Mankind Divided https://t.co/9zjwHmunpZ
+@rafaela: RT @omelete: Deus Ex: Mankind Divided está pronto https://t.co/KxX678PU3g https://t.co/wltbY5WkdF
+
+User: Moving on to testing...
+User: Moving on to testing...
+Watch as I save to a file!
+null
+
+User: Django
+ChatbotFX: Think you might use that someday?
+User: Iraq
+ChatbotFX: You can cross that off your list, because you're not going there.
+User: 
+ChatbotFX: Anything else that you like?
+User: 
+ChatbotFX: Anything else that you like?
 Watch as I save to a file!
