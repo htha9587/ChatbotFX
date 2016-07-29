@@ -43,9 +43,9 @@ import twitter4j.TwitterFactory;
 import twitter4j.User;
 
 /**
- * Version 5.3
+ * Version 5.4
  * @author htha9587
- * 7-28-16
+ * 7-29-16
  * 
  */
 

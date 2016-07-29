@@ -24,9 +24,9 @@ import twitter4j.User;
 import twitter4j.conf.ConfigurationBuilder;
 
 /**
- * Version 5.3
+ * Version 5.4
  * @author htha9587
- * 7-28-16
+ * 7-29-16
  */
 
 

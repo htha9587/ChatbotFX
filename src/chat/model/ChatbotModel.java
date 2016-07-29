@@ -3,9 +3,9 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 5.3
+ * Version 5.4
  * @author htha9587
- * 7-28-16
+ * 7-29-16
  * Makes up the Framework for the ChatbotFX program.
  */
 
@@ -661,7 +661,7 @@ public class ChatbotModel
 		boolean isWest = false;
 		
 		if(currentInput.equals("Rancho Notorious") 
-				|| currentInput.equals("The Assassination of Jesse James by the Coward Robert Ford") 
+				|| currentInput.equals("The Assassination of Jesse James") 
 				|| currentInput.equals("Red River") 
 				|| currentInput.equals("High Noon")
 		     	|| currentInput.equals("Unforgiven")
@@ -787,7 +787,7 @@ public class ChatbotModel
 		boolean isPointer = false;
 		
 		if(currentInput.equals("Be comfortable in your own skin") 
-				|| currentInput.equals("Appreciate what you have and never compare yourself with others") 
+				|| currentInput.equals("Never compare yourself with others") 
 				|| currentInput.equals("See the positive in every situation") 
 				|| currentInput.equals("Let go of your need to control")
 		     	|| currentInput.equals("Drop the resentment within")

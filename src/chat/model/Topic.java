@@ -3,9 +3,9 @@ package chat.model;
 import javafx.beans.property.SimpleStringProperty;
 
 /**
- * Version 5.3
+ * Version 5.4
  * @author htha9587
- * 7-28-16
+ * 7-29-16
  */
 
 
