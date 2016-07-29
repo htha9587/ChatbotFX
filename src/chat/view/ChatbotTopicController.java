@@ -26,7 +26,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 /**
- * Version 5.2
+ * Version 5.3
  * @author htha9587
  * 7-28-16
  */
@@ -149,16 +149,6 @@ public class ChatbotTopicController implements Initializable
 			new Topic("Favorite Foods", "Lasagna"),
 			new Topic("Favorite Foods", "Salad"),
 			new Topic("Favorite Foods", "Steak"),
-			new Topic("Favorite Film Quotes", "I drink your milkshake!"),
-			new Topic("Favorite Film Quotes", "This is the worst thing ever made."),
-			new Topic("Favorite Film Quotes", "They call me Mister Tibbs!"),
-			new Topic("Favorite Film Quotes", "Elementary, my dear Watson."),
-			new Topic("Favorite Film Quotes", "Gentlemen, you can't fight in here!"),
-			new Topic("Favorite Film Quotes", "That'll do, pig. That'll do."),
-			new Topic("Favorite Film Quotes", "Good morning, Vietnam!"),
-			new Topic("Favorite Film Quotes", "Go ahead, make my day."),
-			new Topic("Favorite Film Quotes", "Pay no attention behind the curtain!"),
-			new Topic("Favorite Film Quotes", "Failure to Communicate!"),
 			new Topic("NASA Inventions", "Memory Foam"),
 			new Topic("NASA Inventions", "Anti-corrosion Coating"),
 			new Topic("NASA Inventions", "ArterioVision"),
@@ -259,7 +249,7 @@ public class ChatbotTopicController implements Initializable
 			new Topic("Deadliest Places", "Sudan"),
 			new Topic("Deadliest Places", "Colombia"),
 			new Topic("Deadliest Places", "Iraq")
-		);
+	);
 	
 	@FXML
 	private void handleAbout(ActionEvent event)

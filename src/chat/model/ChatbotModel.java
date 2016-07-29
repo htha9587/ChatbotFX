@@ -3,7 +3,7 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 5.2
+ * Version 5.3
  * @author htha9587
  * 7-28-16
  * Makes up the Framework for the ChatbotFX program.
@@ -955,10 +955,10 @@ public class ChatbotModel
 			return "Shame AI's cannot eat!";
 		}
 		
-		if(favoriteFilmQuotesContentChecker(currentInput))
-		{
-			return "Another Zinger!";
-		}
+		//if(favoriteFilmQuotesContentChecker(currentInput))
+		//{
+		//	return "Another Zinger!";
+	//	}
 		
 		if(nasaInventionsContentChecker(currentInput))
 		{

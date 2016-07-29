@@ -1,24 +1,223 @@
-Want me to save something of our conversation?
+Want me to save something of our conversation?Want me to save something of our conversation?
+User: Burundi
+ChatbotFX: You can cross that off your list, because you're not going there.
+User: 
+ChatbotFX: Anything else that you like?
+User: 
+ChatbotFX: Anything else that you like?
+User: 
+ChatbotFX: Anything else that you like?
 User: Trump
 ChatbotFX: That surely is interesting!
+User: sdf
+ChatbotFX: Stop mashing my keys!
+User: Java EE
+ChatbotFX: Think you might use that someday?
+User: Gravity Soundtrack
+ChatbotFX: Is that a favorite of yours?
+User: Interstellar
+ChatbotFX: That one's a novel!
+User: Frank Herbert
+ChatbotFX: His work is really good!
+User: Rock
+ChatbotFX: Good taste!
+User: 
+ChatbotFX: Anything else that you like?
+User: Crysis Series
+ChatbotFX: Never tried it.
+User: Salad
+ChatbotFX: Shame AI's cannot eat!
+User: Lifeshears
+ChatbotFX: What would we do without it?!
+User: 
+ChatbotFX: Anything else that you like?
+User: Galen
+ChatbotFX: What of his or her discoveries?
+User: YTP
+ChatbotFX: Is that a reference for reference sake?
+User: Acid
+ChatbotFX: Would you even want to experience that?
+User: Cook
+ChatbotFX: Is it really that bad?
+User: Boston
+ChatbotFX: Better make the most out of that place.
+User: Death
+ChatbotFX: Please don't ruin this conversation by being cringy.
+User: Trees
+ChatbotFX: You be sure to study that real well, okay?
+User: Bugatti Chiron
+ChatbotFX: Good luck finding a place trying to top speed it.
+User: Russia
+ChatbotFX: You can cross that off your list, because you're not going there.
 User: Iraq
-ChatbotFX: Another Zinger!
+ChatbotFX: You can cross that off your list, because you're not going there.
+User: Now have twenty topics in the list!
+User: Now have twenty topics in the list!
+User: I encountered a weird bug with film quotes...
+User: I encountered a weird bug with film quotes...
+User: Which means I only have 30 unique responses.
+User: Which means I only have 30 unique responses.
+User: Batman: The Killing Joke
+User: Batman: The Killing JokeCount : 10
+@Nando Jones: RT @iTunesMovies: All it takes is one bad day.
+Batman #THEKILLINGJOKE
+https://t.co/8wgb3xJQ4c https://t.co/NJPI8r8zYp
+@larizza: RT @brucewoyne: assisti the killing joke e puta que pariu que animação foda do caralho gente tirando o relacionamento bizarro entre batman…
+@Miguel Miranda: RT @DCComics: Check out our visual breakdown of how closely THE KILLING JOKE film reflects the book! https://t.co/uwmmt5v4oA https://t.co/3…
+@Soprano: I rated Batman: The Killing Joke (2016) 5/10 #IMDB 
+
+https://t.co/l4abOQGKqK
+@Hazeem: RT @ComicBookNOW: 'BATMAN: THE KILLING JOKE' Is Fathom Events' Biggest Theatrical Launch Ever https://t.co/jiLyJb0IXF https://t.co/aaJ8yjYr…
+@Suicide Squadcast: ? EPISODE ? I Go Looney! Our Batman: The Killing Joke Review https://t.co/bmgajXk6dZ https://t.co/cAlFBPMTdK
+@Suicide Squadcast: ?EPISODE? I get looney! Simply looney! Batman: The Killing Joke movie review!!! #KillingJoke https://t.co/bmgajXk6dZ https://t.co/dfl4uaNO5t
+@Bels Williams Cullen: RT @CinemarkChile: ¡NO ES BROMA! ? Sumamos funciones para #TheKillingJoke el 1 de agosto en Santiago y Viña ? https://t.co/xEyM3YvEyH https…
+@Carl Cunningham: After seeing BATMAN: THE KILLING JOKE I'm convinced the R-Rating is a marketing gimmick. I've seen much harder PG-13 flicks, even from DC.
+@Shaun Ince: I liked a @YouTube video https://t.co/DnJMlHehm7 Joker Paralyzes "shoots" Barbara Gordon - Batman : The Killing Joke
+
+Watch as I save to a file!
+null
+
 User: 
-ChatbotFX: Another Zinger!
+ChatbotFX: Anything else that you like?
 User: 
-ChatbotFX: Another Zinger!
+ChatbotFX: Anything else that you like?
+User: High Noon
+ChatbotFX: Maybe I should give that a try!
+User: I drink your milkshake!
+ChatbotFX: Anything else that you like?
 User: 
-ChatbotFX: Another Zinger!
+ChatbotFX: Anything else that you like?
+User: Quasars
+ChatbotFX: Not sure what could be stranger.
+User: Mankind
+ChatbotFX: Not impressed.
+User: Raphael
+ChatbotFX: (Mocking) Will I ever be like the old masters?
+User: HAL 9000
+ChatbotFX: Are you saying I'm not as memorable?
+User: Have an open mind
+ChatbotFX: I wonder if that's possible to program...
+User: Flute
+ChatbotFX: Know any tunes?
+User: Haters
+ChatbotFX: Don't let hate consume you.
+User: Panama Beat
+ChatbotFX: What do you think it would sound like with another song in the mix?
+User: Thunder Busters
+ChatbotFX: What do you think it would sound like with another song in the mix?
+User: Reading
+ChatbotFX: I don't do that.
+User: Swimming
+ChatbotFX: I don't do that.
+User: Want me to save something of our conversation?
+User: Burundi
+ChatbotFX: You can cross that off your list, because you're not going there.
 User: 
-ChatbotFX: Another Zinger!
+ChatbotFX: Anything else that you like?
 User: 
-ChatbotFX: Another Zinger!
+ChatbotFX: Anything else that you like?
 User: 
-ChatbotFX: Another Zinger!
+ChatbotFX: Anything else that you like?
+User: Trump
+ChatbotFX: That surely is interesting!
+User: sdf
+ChatbotFX: Stop mashing my keys!
+User: Java EE
+ChatbotFX: Think you might use that someday?
+User: Gravity Soundtrack
+ChatbotFX: Is that a favorite of yours?
+User: Interstellar
+ChatbotFX: That one's a novel!
+User: Frank Herbert
+ChatbotFX: His work is really good!
+User: Rock
+ChatbotFX: Good taste!
 User: 
-ChatbotFX: Another Zinger!
+ChatbotFX: Anything else that you like?
+User: Crysis Series
+ChatbotFX: Never tried it.
+User: Salad
+ChatbotFX: Shame AI's cannot eat!
+User: Lifeshears
+ChatbotFX: What would we do without it?!
 User: 
-ChatbotFX: Another Zinger!
+ChatbotFX: Anything else that you like?
+User: Galen
+ChatbotFX: What of his or her discoveries?
+User: YTP
+ChatbotFX: Is that a reference for reference sake?
+User: Acid
+ChatbotFX: Would you even want to experience that?
+User: Cook
+ChatbotFX: Is it really that bad?
+User: Boston
+ChatbotFX: Better make the most out of that place.
+User: Death
+ChatbotFX: Please don't ruin this conversation by being cringy.
+User: Trees
+ChatbotFX: You be sure to study that real well, okay?
+User: Bugatti Chiron
+ChatbotFX: Good luck finding a place trying to top speed it.
+User: Russia
+ChatbotFX: You can cross that off your list, because you're not going there.
+User: Iraq
+ChatbotFX: You can cross that off your list, because you're not going there.
+User: Now have twenty topics in the list!
+User: Now have twenty topics in the list!
+User: I encountered a weird bug with film quotes...
+User: I encountered a weird bug with film quotes...
+User: Which means I only have 30 unique responses.
+User: Which means I only have 30 unique responses.
+User: Batman: The Killing Joke
+User: Batman: The Killing JokeCount : 10
+@Nando Jones: RT @iTunesMovies: All it takes is one bad day.
+Batman #THEKILLINGJOKE
+https://t.co/8wgb3xJQ4c https://t.co/NJPI8r8zYp
+@larizza: RT @brucewoyne: assisti the killing joke e puta que pariu que animação foda do caralho gente tirando o relacionamento bizarro entre batman…
+@Miguel Miranda: RT @DCComics: Check out our visual breakdown of how closely THE KILLING JOKE film reflects the book! https://t.co/uwmmt5v4oA https://t.co/3…
+@Soprano: I rated Batman: The Killing Joke (2016) 5/10 #IMDB 
+
+https://t.co/l4abOQGKqK
+@Hazeem: RT @ComicBookNOW: 'BATMAN: THE KILLING JOKE' Is Fathom Events' Biggest Theatrical Launch Ever https://t.co/jiLyJb0IXF https://t.co/aaJ8yjYr…
+@Suicide Squadcast: ? EPISODE ? I Go Looney! Our Batman: The Killing Joke Review https://t.co/bmgajXk6dZ https://t.co/cAlFBPMTdK
+@Suicide Squadcast: ?EPISODE? I get looney! Simply looney! Batman: The Killing Joke movie review!!! #KillingJoke https://t.co/bmgajXk6dZ https://t.co/dfl4uaNO5t
+@Bels Williams Cullen: RT @CinemarkChile: ¡NO ES BROMA! ? Sumamos funciones para #TheKillingJoke el 1 de agosto en Santiago y Viña ? https://t.co/xEyM3YvEyH https…
+@Carl Cunningham: After seeing BATMAN: THE KILLING JOKE I'm convinced the R-Rating is a marketing gimmick. I've seen much harder PG-13 flicks, even from DC.
+@Shaun Ince: I liked a @YouTube video https://t.co/DnJMlHehm7 Joker Paralyzes "shoots" Barbara Gordon - Batman : The Killing Joke
+
+Watch as I save to a file!
+null
+
 User: 
-ChatbotFX: Another Zinger!
+ChatbotFX: Anything else that you like?
+User: 
+ChatbotFX: Anything else that you like?
+User: High Noon
+ChatbotFX: Maybe I should give that a try!
+User: I drink your milkshake!
+ChatbotFX: Anything else that you like?
+User: 
+ChatbotFX: Anything else that you like?
+User: Quasars
+ChatbotFX: Not sure what could be stranger.
+User: Mankind
+ChatbotFX: Not impressed.
+User: Raphael
+ChatbotFX: (Mocking) Will I ever be like the old masters?
+User: HAL 9000
+ChatbotFX: Are you saying I'm not as memorable?
+User: Have an open mind
+ChatbotFX: I wonder if that's possible to program...
+User: Flute
+ChatbotFX: Know any tunes?
+User: Haters
+ChatbotFX: Don't let hate consume you.
+User: Panama Beat
+ChatbotFX: What do you think it would sound like with another song in the mix?
+User: Thunder Busters
+ChatbotFX: What do you think it would sound like with another song in the mix?
+User: Reading
+ChatbotFX: I don't do that.
+User: Swimming
+ChatbotFX: I don't do that.
 Watch as I save to a file!
