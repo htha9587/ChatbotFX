@@ -26,7 +26,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 /**
- * Version 5.8
+ * Version 5.9
  * @author htha9587
  * 8-1-16
  */

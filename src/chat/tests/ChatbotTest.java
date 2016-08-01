@@ -9,7 +9,7 @@ import org.junit.Test;
 import chat.model.ChatbotModel;
 
 /**
- * Version 5.8
+ * Version 5.9
  * @author htha9587
  * 8-1-16
  * Class used to test the ChatbotFX Object with JUnit 4.
