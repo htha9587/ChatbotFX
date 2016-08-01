@@ -3,7 +3,7 @@ package chat.model;
 import java.util.ArrayList;
 
 /**
- * Version 5.6
+ * Version 5.7
  * @author htha9587
  * 8-1-16
  * Makes up the Framework for the ChatbotFX program.
