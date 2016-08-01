@@ -5,7 +5,7 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 /**
- * Version 5.7
+ * Version 5.8
  * @author htha9587
  * 8-1-16
  */
