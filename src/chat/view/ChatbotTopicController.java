@@ -26,9 +26,9 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 /**
- * Version 5.5
+ * Version 5.6
  * @author htha9587
- * 7-29-16
+ * 8-1-16
  */
 
 
@@ -46,7 +46,9 @@ public class ChatbotTopicController implements Initializable
 	private ObservableList data;
 	private Text ActionStatus;
 	
-	
+	/**
+	 * Initializes the new FXML file.
+	 */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) 
 	{
@@ -343,7 +345,7 @@ public class ChatbotTopicController implements Initializable
 			new Topic("Best Pastimes", "Surfing the Web"),
 			new Topic("Best Pastimes", "Relaxing"),
 			new Topic("Best Pastimes", "Watching TV"),
-			new Topic("Best Pastimes", "Technological Griefers"),
+			new Topic("Best Pastimes", "Eating"),
 			new Topic("Best Pastimes", "Playing Video Games"),
 			new Topic("Best Pastimes", "Reading"),
 			new Topic("Best Pastimes", "Sleeping"),
@@ -351,6 +353,10 @@ public class ChatbotTopicController implements Initializable
 			new Topic("Best Pastimes", "Swimming")
 	);
 	
+	/**
+	 * Event handler for About button.
+	 * @param event
+	 */
 	@FXML
 	private void handleAbout(ActionEvent event)
 	{
@@ -371,6 +377,10 @@ public class ChatbotTopicController implements Initializable
 		
 	}
 		
+	/**
+	 * Event handler for Help button.
+	 * @param event
+	 */
 	@FXML
 	private void handleHelpButton(ActionEvent event)
 	{

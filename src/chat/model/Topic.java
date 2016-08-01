@@ -3,9 +3,9 @@ package chat.model;
 import javafx.beans.property.SimpleStringProperty;
 
 /**
- * Version 5.5
+ * Version 5.6
  * @author htha9587
- * 7-29-16
+ * 8-1-16
  */
 
 
@@ -14,6 +14,11 @@ public class Topic
 	private final SimpleStringProperty topic;
 	private final SimpleStringProperty item;
 	
+	/**
+	 * Constructor.
+	 * @param topic
+	 * @param item
+	 */
 	public Topic(String topic, String item)
 	{
 		super();
@@ -21,11 +26,19 @@ public class Topic
 		this.item = new SimpleStringProperty(item);
 	}
 	
+	/**
+	 * Returns topic.
+	 * @return
+	 */
 	public String getTopic()
 	{
 		return topic.get();
 	}
 	
+	/**
+	 * Returns item.
+	 * @return
+	 */
 	public String getItem()
 	{
 		return item.get();

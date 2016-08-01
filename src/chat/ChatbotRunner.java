@@ -3,15 +3,12 @@ package chat;
 
 import java.io.IOException;
 import java.util.Optional;
-
 import chat.view.ChatbotViewController;
-
 /**
- * Version 5.5
+ * Version 5.6
  * @author htha9587
- * 7-29-16
+ * 8-1-16
  */
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

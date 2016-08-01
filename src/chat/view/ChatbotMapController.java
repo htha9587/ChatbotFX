@@ -8,9 +8,9 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
 /**
- * Version 5.5
+ * Version 5.6
  * @author htha9587
- * 7-29-16
+ * 8-1-16
  */
 
 
@@ -21,10 +21,14 @@ public class ChatbotMapController implements Initializable
 	
 	private WebEngine engine;
 	
+	/**
+	 * Constructor.
+	 */
 	public ChatbotMapController()
 	{
 		
 	}
+	
 	/**
 	 * Initializes the new FXML file.
 	 */

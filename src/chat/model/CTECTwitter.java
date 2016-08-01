@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 import chat.view.ChatbotViewController;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -24,9 +23,9 @@ import twitter4j.User;
 import twitter4j.conf.ConfigurationBuilder;
 
 /**
- * Version 5.5
+ * Version 5.6
  * @author htha9587
- * 7-29-16
+ * 8-1-16
  */
 
 
@@ -53,7 +52,7 @@ public class CTECTwitter
 	}
 	
 	/**
-	 * Send tweet message of a String type.
+	 * Sends tweet message of a String type.
 	 */
 	public void sendTweet(String tweet)
 	{
@@ -191,6 +190,10 @@ public class CTECTwitter
 		String twitterException = new TwitterException("").getExceptionCode();
 	}
 	
+	/**
+	 * Exception handler.
+	 * @param ex
+	 */
 	public void onException(Exception ex)
 	{
 		ex.printStackTrace();

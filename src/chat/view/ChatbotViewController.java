@@ -11,7 +11,6 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
-
 import com.calendarfx.view.CalendarView;
 import chat.ChatbotRunner;
 import chat.model.CTECTwitter;
@@ -43,9 +42,9 @@ import twitter4j.TwitterFactory;
 import twitter4j.User;
 
 /**
- * Version 5.5
+ * Version 5.6
  * @author htha9587
- * 7-29-16
+ * 8-1-16
  * 
  */
 
@@ -108,6 +107,11 @@ public class ChatbotViewController
 		chatbotTwitter = TwitterFactory.getSingleton();
 	}
 	
+	/**
+	 * Initializes new FXML file.
+	 * @param location
+	 * @param resources
+	 */
 	public void initialize(URL location, ResourceBundle resources)
 	{
 	engine = webView.getEngine();
@@ -124,6 +128,10 @@ public class ChatbotViewController
 		return harryBot;
 	}
 	
+	/**
+	 * Setter for the runner class.
+	 * @param chatbotRunner
+	 */
 	public void setChatbotRunner(ChatbotRunner chatbotRunner)
 	{
 		this.chatbotRunner = chatbotRunner;
@@ -265,7 +273,10 @@ public class ChatbotViewController
 		}
 	}
 			
-	
+	/**
+	 * Reads text from a file and appends it to the ChatArea.
+	 * @return
+	 */
 	public String bufferedReader()
 	{
 		BufferedReader bufferedReader = null;
@@ -326,6 +337,9 @@ public class ChatbotViewController
 		
 	}
 	
+	/**
+	 * Opens the text file.
+	 */
 	public void openFile()
 	{
 		Alert alert = new Alert(AlertType.INFORMATION);
@@ -340,7 +354,10 @@ public class ChatbotViewController
 	}
 	
 	
-	
+	/**
+	 * Event handler for Quit Button.
+	 * @param event
+	 */
 	@FXML
 	private void handleQuitButton(ActionEvent event)
 	{
@@ -357,6 +374,10 @@ public class ChatbotViewController
 		System.exit(0); //Closes the application.
 	}
 	
+	/**
+	 * Event handler for Chat Button.
+	 * @param event
+	 */
 	@FXML
 	private void handleChatButton(ActionEvent event)
 	{
@@ -367,6 +388,10 @@ public class ChatbotViewController
 		chatField.setText(""); //Clears user field.
 	}
 	
+	/**
+	 * Event handler for Send Tweet Button.
+	 * @param event
+	 */
 	@FXML
 	private void handleTweetButton(ActionEvent event)
 	{
@@ -377,6 +402,10 @@ public class ChatbotViewController
 		chatField.setText(""); //Clears user field.
 	}
 	
+	/**
+	 * Event handler for Search Twitter Button.
+	 * @param event
+	 */
 	@FXML
 	private void handleSearchButton(ActionEvent event)
 	{
@@ -387,6 +416,11 @@ public class ChatbotViewController
 		chatField.setText(""); //Clears user field.
 	}
 	
+	/**
+	 * Event handler for Save Button.
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	private void handleSaveButton(ActionEvent event) throws IOException
 	{
@@ -397,7 +431,10 @@ public class ChatbotViewController
 		chatField.setText(""); //Clears user field.
 	}
 	
-
+/**
+ * Event handler for Load Button.
+ * @param event
+ */
 	@FXML
 	private void handleLoadButton(ActionEvent event)
 	{
@@ -415,6 +452,11 @@ public class ChatbotViewController
         chatArea.setText(sb.toString());
 	}
 	
+	/**
+	 * Reads text file and appends as a String.
+	 * @param selectedFile
+	 * @return
+	 */
 	public StringBuilder readFile(File selectedFile){
 		         StringBuilder sb = new StringBuilder(1024);
 		         String curLine = "";
@@ -432,7 +474,10 @@ public class ChatbotViewController
 		        return sb;
 		     }
 	
-
+	/**
+	 * Event handler for Calendar Button.
+	 * @param event
+	 */
 	@FXML
 	private void handleCalendarButton(ActionEvent event)
 	{
@@ -455,6 +500,10 @@ public class ChatbotViewController
 		
 }
 
+	/**
+	 * Event handler for Map Button.
+	 * @param event
+	 */
 	@FXML
 	private void handleMapButton(ActionEvent event)
 	{
@@ -477,6 +526,10 @@ public class ChatbotViewController
 		
 }
 	
+	/**
+	 * Event handler for TopicList Button.
+	 * @param event
+	 */
 	@FXML
 	private void handleTopicButton(ActionEvent event)
 	{
