@@ -9,9 +9,9 @@ import org.junit.Test;
 import chat.model.ChatbotModel;
 
 /**
- * Version 6.0
+ * Version 6.1
  * @author htha9587
- * 8-2-16
+ * 8-3-16
  * Class used to test the ChatbotFX Object with JUnit 4.
  */
 
@@ -212,7 +212,155 @@ public class ChatbotTest
 		assertTrue("Content not detected", harryBot.nasaInventionsContentChecker("Water Filters"));
 	}
 	
+	@Test
+	public void testBiologyScientistsContentChecker()
+	{
+		assertTrue("Content not detected", harryBot.biologyScientistsContentChecker("Charles Darwin"));
+		assertTrue("Content not detected", harryBot.biologyScientistsContentChecker("Gregor Mendel"));
+		assertTrue("Content not detected", harryBot.biologyScientistsContentChecker("Aristotle"));
+		assertTrue("Content not detected", harryBot.biologyScientistsContentChecker("Hippocrates"));
+		assertTrue("Content not detected", harryBot.biologyScientistsContentChecker("Robert Hooke"));
+		assertTrue("Content not detected", harryBot.biologyScientistsContentChecker("Louis Pasteur"));
+		assertTrue("Content not detected", harryBot.biologyScientistsContentChecker("Edward Jenner"));
+		assertTrue("Content not detected", harryBot.biologyScientistsContentChecker("Claude Bernard"));
+		assertTrue("Content not detected", harryBot.biologyScientistsContentChecker("Robert Brown"));
+		assertTrue("Content not detected", harryBot.biologyScientistsContentChecker("Galen"));
+	}
 	
+	@Test
+	public void testMemeContentChecker()
+	{
+		assertTrue("Content not detected", harryBot.memeContentChecker("Squadala!"));
+		assertTrue("Content not detected", harryBot.memeContentChecker("Mah Boi!"));
+		assertTrue("Content not detected", harryBot.memeContentChecker("Gee, It sure is boring around here!"));
+		assertTrue("Content not detected", harryBot.memeContentChecker("Enclosed Instruction Book"));
+		assertTrue("Content not detected", harryBot.memeContentChecker("I can't wait to bomb some Dodongos!"));
+		assertTrue("Content not detected", harryBot.memeContentChecker("Everything about Hotel Mario"));
+		assertTrue("Content not detected", harryBot.memeContentChecker("YTP"));
+		assertTrue("Content not detected", harryBot.memeContentChecker("Snooping as usual I see!"));
+		assertTrue("Content not detected", harryBot.memeContentChecker("These are the faces of evil!"));
+		assertTrue("Content not detected", harryBot.memeContentChecker("Enough!"));
+	}
+	
+	@Test
+	public void testSpookyDeathContentChecker()
+	{
+		assertTrue("Content not detected", harryBot.spookyDeathContentChecker("Drowning"));
+		assertTrue("Content not detected", harryBot.spookyDeathContentChecker("Immolation"));
+		assertTrue("Content not detected", harryBot.spookyDeathContentChecker("Spaghettification"));
+		assertTrue("Content not detected", harryBot.spookyDeathContentChecker("Inquisition Tortures"));
+		assertTrue("Content not detected", harryBot.spookyDeathContentChecker("Shredding"));
+		assertTrue("Content not detected", harryBot.spookyDeathContentChecker("Amusement Park Rides"));
+		assertTrue("Content not detected", harryBot.spookyDeathContentChecker("Decapitation"));
+		assertTrue("Content not detected", harryBot.spookyDeathContentChecker("Vacuum Exposure"));
+		assertTrue("Content not detected", harryBot.spookyDeathContentChecker("Viruses"));
+		assertTrue("Content not detected", harryBot.spookyDeathContentChecker("Acid"));
+	}
+	
+	@Test
+	public void testBadJobsContentChecker()
+	{
+		assertTrue("Content not detected", harryBot.badJobsContentChecker("Mail Carrier"));
+		assertTrue("Content not detected", harryBot.badJobsContentChecker("Firefighter"));
+		assertTrue("Content not detected", harryBot.badJobsContentChecker("Taxi Driver"));
+		assertTrue("Content not detected", harryBot.badJobsContentChecker("Corrections Officer"));
+		assertTrue("Content not detected", harryBot.badJobsContentChecker("Photojournalist"));
+		assertTrue("Content not detected", harryBot.badJobsContentChecker("Broadcaster"));
+		assertTrue("Content not detected", harryBot.badJobsContentChecker("Cook"));
+		assertTrue("Content not detected", harryBot.badJobsContentChecker("Lumberjack"));
+		assertTrue("Content not detected", harryBot.badJobsContentChecker("Garbageman?"));
+		assertTrue("Content not detected", harryBot.badJobsContentChecker("Newspaper Reporter"));
+	}
+	
+	@Test
+	public void testSoftwareSchoolsContentChecker()
+	{
+		assertTrue("Content not detected", harryBot.softwareSchoolsContentChecker("Harvard"));
+		assertTrue("Content not detected", harryBot.softwareSchoolsContentChecker("Carnegie Mellon"));
+		assertTrue("Content not detected", harryBot.softwareSchoolsContentChecker("Boston"));
+		assertTrue("Content not detected", harryBot.softwareSchoolsContentChecker("Santa Clara"));
+		assertTrue("Content not detected", harryBot.softwareSchoolsContentChecker("Villanova"));
+		assertTrue("Content not detected", harryBot.softwareSchoolsContentChecker("Denver"));
+		assertTrue("Content not detected", harryBot.softwareSchoolsContentChecker("Seattle"));
+		assertTrue("Content not detected", harryBot.softwareSchoolsContentChecker("Fairfield"));
+		assertTrue("Content not detected", harryBot.softwareSchoolsContentChecker("Rochester"));
+		assertTrue("Content not detected", harryBot.softwareSchoolsContentChecker("George Mason"));
+	}
+	
+	@Test
+	public void testSadTopicsContentChecker()
+	{
+		assertTrue("Content not detected", harryBot.sadTopicsContentChecker("Death"));
+		assertTrue("Content not detected", harryBot.sadTopicsContentChecker("Heat Death"));
+		assertTrue("Content not detected", harryBot.sadTopicsContentChecker("Entropy"));
+		assertTrue("Content not detected", harryBot.sadTopicsContentChecker("Loneliness"));
+		assertTrue("Content not detected", harryBot.sadTopicsContentChecker("Poverty"));
+		assertTrue("Content not detected", harryBot.sadTopicsContentChecker("Starvation"));
+		assertTrue("Content not detected", harryBot.sadTopicsContentChecker("Widow"));
+		assertTrue("Content not detected", harryBot.sadTopicsContentChecker("Loss"));
+		assertTrue("Content not detected", harryBot.sadTopicsContentChecker("Guilt"));
+		assertTrue("Content not detected", harryBot.sadTopicsContentChecker("Anxiety?"));
+	}
+	
+	@Test
+	public void testDataTopicsContentChecker()
+	{
+		assertTrue("Content not detected", harryBot.dataTopicsContentChecker("Algorithms and Data Structures"));
+		assertTrue("Content not detected", harryBot.dataTopicsContentChecker("Sorting & Searching"));
+		assertTrue("Content not detected", harryBot.dataTopicsContentChecker("Trees"));
+		assertTrue("Content not detected", harryBot.dataTopicsContentChecker("Hash Tables"));
+		assertTrue("Content not detected", harryBot.dataTopicsContentChecker("Graphs"));
+		assertTrue("Content not detected", harryBot.dataTopicsContentChecker("Sorting Algorithms"));
+		assertTrue("Content not detected", harryBot.dataTopicsContentChecker("Databases"));
+		assertTrue("Content not detected", harryBot.dataTopicsContentChecker("Bindings"));
+		assertTrue("Content not detected", harryBot.dataTopicsContentChecker("Documentation"));
+		assertTrue("Content not detected", harryBot.dataTopicsContentChecker("Technical Writing"));
+	}
+	
+	@Test
+	public void testFastCarTopicsContentChecker()
+	{
+		assertTrue("Content not detected", harryBot.fastCarTopicsContentChecker("Hennessey Venom GT"));
+		assertTrue("Content not detected", harryBot.fastCarTopicsContentChecker("Bugatti Chiron"));
+		assertTrue("Content not detected", harryBot.fastCarTopicsContentChecker("Bugatti Veyron Super Sport"));
+		assertTrue("Content not detected", harryBot.fastCarTopicsContentChecker("SSC Ultimate Aero"));
+		assertTrue("Content not detected", harryBot.fastCarTopicsContentChecker("Koenigsegg CCR"));
+		assertTrue("Content not detected", harryBot.fastCarTopicsContentChecker("McLaren F1"));
+		assertTrue("Content not detected", harryBot.fastCarTopicsContentChecker("Aston Martin One-77"));
+		assertTrue("Content not detected", harryBot.fastCarTopicsContentChecker("Jaguar XJ220"));
+		assertTrue("Content not detected", harryBot.fastCarTopicsContentChecker("Ferrari LaFerrari"));
+		assertTrue("Content not detected", harryBot.fastCarTopicsContentChecker("McLaren P1"));
+	}
+	
+	@Test
+	public void testDeadliestPlacesContentChecker()
+	{
+		assertTrue("Content not detected", harryBot.deadliestPlacesContentChecker("Russia"));
+		assertTrue("Content not detected", harryBot.deadliestPlacesContentChecker("Brazil"));
+		assertTrue("Content not detected", harryBot.deadliestPlacesContentChecker("South Africa"));
+		assertTrue("Content not detected", harryBot.deadliestPlacesContentChecker("Burundi"));
+		assertTrue("Content not detected", harryBot.deadliestPlacesContentChecker("Antarctica"));
+		assertTrue("Content not detected", harryBot.deadliestPlacesContentChecker("Afghanistan"));
+		assertTrue("Content not detected", harryBot.deadliestPlacesContentChecker("Somalia"));
+		assertTrue("Content not detected", harryBot.deadliestPlacesContentChecker("Sudan"));
+		assertTrue("Content not detected", harryBot.deadliestPlacesContentChecker("Colombia"));
+		assertTrue("Content not detected", harryBot.deadliestPlacesContentChecker("Iraq"));
+	}
+	
+	@Test
+	public void testBestWesternChecker()
+	{
+		assertTrue("Content not detected", harryBot.bestWesternChecker("Rancho Notorious"));
+		assertTrue("Content not detected", harryBot.bestWesternChecker("The Assassination of Jesse James"));
+		assertTrue("Content not detected", harryBot.bestWesternChecker("Red River"));
+		assertTrue("Content not detected", harryBot.bestWesternChecker("High Noon"));
+		assertTrue("Content not detected", harryBot.bestWesternChecker("Unforgiven"));
+		assertTrue("Content not detected", harryBot.bestWesternChecker("McCabe & Mrs Miller"));
+		assertTrue("Content not detected", harryBot.bestWesternChecker("Butch Cassidy and the Sundance Kid"));
+		assertTrue("Content not detected", harryBot.bestWesternChecker("The Searchers"));
+		assertTrue("Content not detected", harryBot.bestWesternChecker("The Wild Bunch"));
+		assertTrue("Content not detected", harryBot.bestWesternChecker("Once Upon a Time in the West"));
+	}
 	
 	@Test
 	public void testGetUserName()

@@ -5,9 +5,9 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 /**
- * Version 6.0
+ * Version 6.1
  * @author htha9587
- * 8-2-16
+ * 8-3-16
  */
 
 @RunWith(Suite.class)

@@ -9,9 +9,9 @@ import org.junit.Test;
 import chat.view.ChatbotViewController;
 
 /**
- * Version 6.0
+ * Version 6.1
  * @author htha9587
- * 8-2-16
+ * 8-3-16
  */
 
 public class ChatControllerTest 
