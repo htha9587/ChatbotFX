@@ -9,9 +9,9 @@ import org.junit.Test;
 import chat.model.ChatbotModel;
 
 /**
- * Version 6.1
+ * Version 6.2
  * @author htha9587
- * 8-3-16
+ * 8-4-16
  * Class used to test the ChatbotFX Object with JUnit 4.
  */
 
@@ -360,6 +360,141 @@ public class ChatbotTest
 		assertTrue("Content not detected", harryBot.bestWesternChecker("The Searchers"));
 		assertTrue("Content not detected", harryBot.bestWesternChecker("The Wild Bunch"));
 		assertTrue("Content not detected", harryBot.bestWesternChecker("Once Upon a Time in the West"));
+	}
+	
+	@Test
+	public void testStrangeThingsChecker()
+	{
+		assertTrue("Content not detected", harryBot.strangeThingsChecker("Antimatter"));
+		assertTrue("Content not detected", harryBot.strangeThingsChecker("IMBH"));
+		assertTrue("Content not detected", harryBot.strangeThingsChecker("Cosmic Microwave Background"));
+		assertTrue("Content not detected", harryBot.strangeThingsChecker("Dark Matter"));
+		assertTrue("Content not detected", harryBot.strangeThingsChecker("Exoplanets"));
+		assertTrue("Content not detected", harryBot.strangeThingsChecker("Gravitational Waves"));
+		assertTrue("Content not detected", harryBot.strangeThingsChecker("Galactic Cannibalism"));
+		assertTrue("Content not detected", harryBot.strangeThingsChecker("Neutrinos"));
+		assertTrue("Content not detected", harryBot.strangeThingsChecker("Quasars"));
+		assertTrue("Content not detected", harryBot.strangeThingsChecker("Vacuum Energy"));
+	}
+	
+	@Test
+	public void testExtremeLifeChecker()
+	{
+		assertTrue("Content not detected", harryBot.extremeLifeChecker("Blue Whale"));
+		assertTrue("Content not detected", harryBot.extremeLifeChecker("Playtpus"));
+		assertTrue("Content not detected", harryBot.extremeLifeChecker("Komodo Dragon"));
+		assertTrue("Content not detected", harryBot.extremeLifeChecker("Ocean Quahog"));
+		assertTrue("Content not detected", harryBot.extremeLifeChecker("MRL Mouse"));
+		assertTrue("Content not detected", harryBot.extremeLifeChecker("Pompeii Worm"));
+		assertTrue("Content not detected", harryBot.extremeLifeChecker("Deinococcus Radiodurans"));
+		assertTrue("Content not detected", harryBot.extremeLifeChecker("Tardigrade"));
+		assertTrue("Content not detected", harryBot.extremeLifeChecker("Archaea"));
+		assertTrue("Content not detected", harryBot.extremeLifeChecker("Mankind"));
+	}
+	
+	@Test
+	public void testBestPainterChecker()
+	{
+		assertTrue("Content not detected", harryBot.bestPainterChecker("Paul Cezanne"));
+		assertTrue("Content not detected", harryBot.bestPainterChecker("Jan Vermeer"));
+		assertTrue("Content not detected", harryBot.bestPainterChecker("August Renoir"));
+		assertTrue("Content not detected", harryBot.bestPainterChecker("Raphael"));
+		assertTrue("Content not detected", harryBot.bestPainterChecker("Pablo Picasso"));
+		assertTrue("Content not detected", harryBot.bestPainterChecker("Claude Monet"));
+		assertTrue("Content not detected", harryBot.bestPainterChecker("Michelangelo"));
+		assertTrue("Content not detected", harryBot.bestPainterChecker("Rembrandt"));
+		assertTrue("Content not detected", harryBot.bestPainterChecker("Vincent Van Gogh"));
+		assertTrue("Content not detected", harryBot.bestPainterChecker("Leonardo Da Vinci"));
+	}
+	
+	@Test
+	public void testFilmAIChecker()
+	{
+		assertTrue("Content not detected", harryBot.filmAIChecker("HAL 9000"));
+		assertTrue("Content not detected", harryBot.filmAIChecker("David"));
+		assertTrue("Content not detected", harryBot.filmAIChecker("Replicants"));
+		assertTrue("Content not detected", harryBot.filmAIChecker("Colossus"));
+		assertTrue("Content not detected", harryBot.filmAIChecker("Proteus IV"));
+		assertTrue("Content not detected", harryBot.filmAIChecker("The Puppet Master"));
+		assertTrue("Content not detected", harryBot.filmAIChecker("The Matrix"));
+		assertTrue("Content not detected", harryBot.filmAIChecker("Maria"));
+		assertTrue("Content not detected", harryBot.filmAIChecker("Skynet"));
+		assertTrue("Content not detected", harryBot.filmAIChecker("SAL 9000"));
+	}
+	
+	@Test
+	public void testLifePointersChecker()
+	{
+		assertTrue("Content not detected", harryBot.lifePointersChecker("Be comfortable in your own skin"));
+		assertTrue("Content not detected", harryBot.lifePointersChecker("Never compare yourself with others"));
+		assertTrue("Content not detected", harryBot.lifePointersChecker("See the positive in every situation"));
+		assertTrue("Content not detected", harryBot.lifePointersChecker("Let go of your need to control"));
+		assertTrue("Content not detected", harryBot.lifePointersChecker("Drop the resentment within"));
+		assertTrue("Content not detected", harryBot.lifePointersChecker("Live in the moment"));
+		assertTrue("Content not detected", harryBot.lifePointersChecker("Avoid overanalyzing"));
+		assertTrue("Content not detected", harryBot.lifePointersChecker("Stop worrying about the future"));
+		assertTrue("Content not detected", harryBot.lifePointersChecker("Drop your ego and be true"));
+		assertTrue("Content not detected", harryBot.lifePointersChecker("Have an open mind"));
+	}
+	
+	@Test
+	public void testInfluentialInstrumentsChecker()
+	{
+		assertTrue("Content not detected", harryBot.influentialInstrumentsChecker("Electric Guitar"));
+		assertTrue("Content not detected", harryBot.influentialInstrumentsChecker("Piano"));
+		assertTrue("Content not detected", harryBot.influentialInstrumentsChecker("Drums"));
+		assertTrue("Content not detected", harryBot.influentialInstrumentsChecker("Saxophone"));
+		assertTrue("Content not detected", harryBot.influentialInstrumentsChecker("Bass Guitar"));
+		assertTrue("Content not detected", harryBot.influentialInstrumentsChecker("Voilin"));
+		assertTrue("Content not detected", harryBot.influentialInstrumentsChecker("Acoustic Guitar"));
+		assertTrue("Content not detected", harryBot.influentialInstrumentsChecker("Flute"));
+		assertTrue("Content not detected", harryBot.influentialInstrumentsChecker("Guitar"));
+		assertTrue("Content not detected", harryBot.influentialInstrumentsChecker("Clarinet"));
+	}
+	
+	@Test
+	public void testBadFandomChecker()
+	{
+		assertTrue("Content not detected", harryBot.badFandomChecker("Sonic Fans"));
+		assertTrue("Content not detected", harryBot.badFandomChecker("90s Kids"));
+		assertTrue("Content not detected", harryBot.badFandomChecker("Feminists"));
+		assertTrue("Content not detected", harryBot.badFandomChecker("Saxophone"));
+		assertTrue("Content not detected", harryBot.badFandomChecker("Weaboo's"));
+		assertTrue("Content not detected", harryBot.badFandomChecker("Worst of the Worst"));
+		assertTrue("Content not detected", harryBot.badFandomChecker("Extremists"));
+		assertTrue("Content not detected", harryBot.badFandomChecker("Haters"));
+		assertTrue("Content not detected", harryBot.badFandomChecker("Bronies?"));
+		assertTrue("Content not detected", harryBot.badFandomChecker("What else was there..."));
+	}
+	
+	@Test
+	public void testGroupMashupChecker()
+	{
+		assertTrue("Content not detected", harryBot.groupMashupChecker("Stayin' Alive In The Wall"));
+		assertTrue("Content not detected", harryBot.groupMashupChecker("Gimmie Shelter In The Deep"));
+		assertTrue("Content not detected", harryBot.groupMashupChecker("Golden Teardrops"));
+		assertTrue("Content not detected", harryBot.groupMashupChecker("Hey Scientist"));
+		assertTrue("Content not detected", harryBot.groupMashupChecker("Technological Griefers"));
+		assertTrue("Content not detected", harryBot.groupMashupChecker("Come Closer"));
+		assertTrue("Content not detected", harryBot.groupMashupChecker("Thunder Busters"));
+		assertTrue("Content not detected", harryBot.groupMashupChecker("Panama Beat"));
+		assertTrue("Content not detected", harryBot.groupMashupChecker("Billie Jean Get Lucky"));
+		assertTrue("Content not detected", harryBot.groupMashupChecker("Whole Lotta Helter Skelter"));
+	}
+	
+	@Test
+	public void testBestPastimeChecker()
+	{
+		assertTrue("Content not detected", harryBot.bestPastimeChecker("Listening to Music"));
+		assertTrue("Content not detected", harryBot.bestPastimeChecker("Surfing the Web"));
+		assertTrue("Content not detected", harryBot.bestPastimeChecker("Relaxing"));
+		assertTrue("Content not detected", harryBot.bestPastimeChecker("Watching TV"));
+		assertTrue("Content not detected", harryBot.bestPastimeChecker("Eating"));
+		assertTrue("Content not detected", harryBot.bestPastimeChecker("Playing Video Games"));
+		assertTrue("Content not detected", harryBot.bestPastimeChecker("Reading"));
+		assertTrue("Content not detected", harryBot.bestPastimeChecker("Sleeping"));
+		assertTrue("Content not detected", harryBot.bestPastimeChecker("Going to a Movie"));
+		assertTrue("Content not detected", harryBot.bestPastimeChecker("Swimming"));
 	}
 	
 	@Test
