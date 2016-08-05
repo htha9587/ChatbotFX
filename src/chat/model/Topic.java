@@ -3,7 +3,7 @@ package chat.model;
 import javafx.beans.property.SimpleStringProperty;
 
 /**
- * Version 6.2
+ * Version 6.3
  * @author htha9587
  * 8-4-16
  */
