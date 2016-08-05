@@ -18,4 +18,5 @@ shows the tweet you posted in a new window(Use with Caution). Typing in the Chat
 ten topics based on the category you searched. Make sure to save your conversation before clicking the
 Quit button, which will have ChatbotFX say goodbye and close the program.
 NOTICE: It's best to download the src and run ChatbotFX in an IDE(preferably Eclipse). This will allow ChatbotFXFile.txt to be created inside your workspace, where it was intended to be found.
+Running ChatbotFX inside Eclipse requires this plugin: http://www.eclipse.org/efxclipse/install.html
 If you encounter any bugs, report them to harrison.thacker69@gmail.com
