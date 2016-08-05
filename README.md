@@ -17,4 +17,5 @@ are listed in the ChatArea. Typing in the same ChatField and hitting the Send Tw
 shows the tweet you posted in a new window(Use with Caution). Typing in the ChatField and clicking the search button shows
 ten topics based on the category you searched. Make sure to save your conversation before clicking the
 Quit button, which will have ChatbotFX say goodbye and close the program.
+NOTICE: It's best to download the src and run ChatbotFX in an IDE(preferably Eclipse). This will allow ChatbotFXFile.txt to be created inside your workspace, where it was intended to be found.
 If you encounter any bugs, report them to harrison.thacker69@gmail.com
