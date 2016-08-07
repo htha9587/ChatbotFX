@@ -19,4 +19,6 @@ ten topics based on the category you searched. Make sure to save your conversati
 Quit button, which will have ChatbotFX say goodbye and close the program.
 NOTICE: It's best to download the src and run ChatbotFX in an IDE(preferably Eclipse). This will allow ChatbotFXFile.txt to be created inside your workspace, where it was intended to be found.
 Running ChatbotFX inside Eclipse requires this plugin: http://www.eclipse.org/efxclipse/install.html
+The Calendar Interface is free for a limited time, but after a while will require a license key or a buying option.
+http://dlsc.com/products/calendarfx/licensing-options/
 If you encounter any bugs, report them to harrison.thacker69@gmail.com
