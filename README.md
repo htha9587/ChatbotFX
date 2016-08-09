@@ -19,4 +19,6 @@ ten topics based on the category you searched Twitter for. Make sure to save you
 Quit button, which will have ChatbotFX say goodbye and close the program.
 NOTICE: Running ChatbotFX inside an IDE (Eclipse) requires this plugin: http://www.eclipse.org/efxclipse/install.html
 Installation: Install with runnable Jar or IDE for Mac and Linux users. Windows: Search build folder, click deploy folder, click bundles folder, and download the exe Installer of version 6.7. Disable anything preventing you from doing so if necessary.
+Calendar: The Calendar Interface is free for a limited time, but after a while will require a license key or a buying option.
+  http://dlsc.com/products/calendarfx/licensing-options/ and http://dlsc.com/wp-content/html/calendarfx/manual.html#_distribution
 If you encounter any bugs, report them to harrison.thacker69@gmail.com
