@@ -42,9 +42,9 @@ import twitter4j.TwitterFactory;
 import twitter4j.User;
 
 /**
- * Version 6.5
+ * Version 6.7
  * @author htha9587
- * 8-5-16
+ * 8-9-16
  * 
  */
 
@@ -425,12 +425,40 @@ public class ChatbotViewController
 	private void handleSaveButton(ActionEvent event) throws IOException
 	{
 		//Saves text area text to a text file.
-		String userText = chatArea.getText(); //Grabs conversation text.
-		bufferedWriter(userText); //Displays user text.
-		chatArea.appendText("\nUser: " + userText); //Gets and displays answer.
-		chatField.setText(""); //Clears user field.
+		FileChooser fc = new FileChooser();
+		//Extension Filter.
+		FileChooser.ExtensionFilter  extFilter =
+				new FileChooser.ExtensionFilter("TXT files (*.txt)", "*.txt");
+        fc.getExtensionFilters().add(extFilter);
+        fc.setTitle("Saving...");
+        //Show save dialog.
+        File file = fc.showSaveDialog(null);
+        if(file != null)
+        {
+        	SaveFile(chatArea.getText(), file);
+        }
 	}
 	
+	/**
+	 * Saves conversation to text file.
+	 * @param text
+	 * @param file2
+	 */
+private void SaveFile(String text, File file) 
+{
+	try
+	{
+		FileWriter fileWriter ;
+		
+		fileWriter = new FileWriter(file);
+		fileWriter.write(text);
+		fileWriter.close();
+	} catch(IOException e)
+	{
+		e.printStackTrace();
+	}
+}
+
 /**
  * Event handler for Load Button.
  * @param event
