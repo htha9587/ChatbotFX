@@ -17,7 +17,6 @@ are listed in the ChatArea. Typing in the same ChatField and hitting the Send Tw
 shows the tweet you posted in a new window(Use with Caution). Typing in the ChatField and clicking the search button shows
 ten topics based on the category you searched Twitter for. Make sure to save your conversation before clicking the
 Quit button, which will have ChatbotFX say goodbye and close the program.
-NOTICE:Running ChatbotFX inside an IDE (Eclipse) requires this plugin: http://www.eclipse.org/efxclipse/install.html
-The Calendar Interface is free for a limited time, but after a while will require a license key or a buying option.
-http://dlsc.com/products/calendarfx/licensing-options/
+NOTICE: Running ChatbotFX inside an IDE (Eclipse) requires this plugin: http://www.eclipse.org/efxclipse/install.html
+Installation: Install with runnable Jar or IDE for Mac and Linux users. Windows: Search build folder, click deploy folder, click bundles folder, and download the exe Installer of version 6.7. Disable anything preventing you from doing so if necessary.
 If you encounter any bugs, report them to harrison.thacker69@gmail.com
