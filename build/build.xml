@@ -133,7 +133,7 @@
 		<fx:application id="fxApplication"
 			name="ChatbotFX"
 			mainClass="chat.ChatbotRunner"
-			version="6.5"
+			version="6.7"
 		/>
 	
 		<mkdir dir="build/classes/META-INF" />
@@ -149,7 +149,7 @@
 			<manifest>
 				<attribute name="Implementation-Vendor" value="htha9587"/>
 				<attribute name="Implementation-Title" value="ChatbotFX"/>
-				<attribute name="Implementation-Version" value="6.5"/>
+				<attribute name="Implementation-Version" value="6.7"/>
 				<attribute name="JavaFX-Feature-Proxy" value="None"/>
 			</manifest>
 		</fx:jar>
