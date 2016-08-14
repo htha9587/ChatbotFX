@@ -26,33 +26,13 @@
 			</fileset>
 		</copy>
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\Harrison\Desktop\calendarfx-1.3.2-bin\ext">
-				<filename name="fontawesomefx-8.9.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
 			<fileset dir="C:\Users\Harrison\Downloads\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.junit_4.12.0.v201504281640">
 				<filename name="junit.jar"/>
 			</fileset>
 		</copy>
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\Harrison\Desktop\calendarfx-1.3.2-bin\ext">
-				<filename name="controlsfx-8.40.10.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\Harrison\Desktop\calendarfx-1.3.2-bin\lib">
-				<filename name="calendarfx-view-1.3.2.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
 			<fileset dir="C:\Users\Harrison\Downloads\twitter4j-4.0.4\lib">
 				<filename name="twitter4j-core-4.0.4.jar"/>
-			</fileset>
-		</copy>
-		<copy todir="externalLibs">
-			<fileset dir="C:\Users\Harrison\Desktop\calendarfx-1.3.2-bin\ext">
-				<filename name="license4j-1.4.0.jar"/>
 			</fileset>
 		</copy>
 	
@@ -74,13 +54,9 @@
 		<!-- Copy project-libs references -->
 		<copy todir="build/libs">
 			<fileset dir="externalLibs">
-				<include name="controlsfx-8.40.10.jar"/>
-				<include name="fontawesomefx-8.9.jar"/>
 				<include name="org.hamcrest.core_1.3.0.v201303031735.jar"/>
 				<include name="twitter4j-core-4.0.4.jar"/>
 				<include name="junit.jar"/>
-				<include name="calendarfx-view-1.3.2.jar"/>
-				<include name="license4j-1.4.0.jar"/>
 			</fileset>
 		</copy>
 	
@@ -133,7 +109,7 @@
 		<fx:application id="fxApplication"
 			name="ChatbotFX"
 			mainClass="chat.ChatbotRunner"
-			version="6.7"
+			version="6.8"
 		/>
 	
 		<mkdir dir="build/classes/META-INF" />
@@ -149,7 +125,7 @@
 			<manifest>
 				<attribute name="Implementation-Vendor" value="htha9587"/>
 				<attribute name="Implementation-Title" value="ChatbotFX"/>
-				<attribute name="Implementation-Version" value="6.7"/>
+				<attribute name="Implementation-Version" value="6.8"/>
 				<attribute name="JavaFX-Feature-Proxy" value="None"/>
 			</manifest>
 		</fx:jar>

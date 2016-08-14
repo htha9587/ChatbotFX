@@ -26,9 +26,9 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 /**
- * Version 6.7
+ * Version 6.8
  * @author htha9587
- * 8-9-16
+ * 8-14-16
  */
 
 
@@ -389,9 +389,7 @@ public class ChatbotTopicController implements Initializable
 		alert.setHeaderText("ChatbotFX: Help");
 		alert.setContentText("As the program starts, ChatbotFX will ask you for your name. Type it in the text field and"
 				+ " hit OK. Then the main interface opens up. The Map button opens up a Google Map in a new window,"
-				+ " see if you can find where you currently are! The Calendar button opens up a fully functional calendar"
-				+ " in which you can save agendas. Everything is saved so long as the window and the main application remain"
-				+ " running. On the right corner of the window is the ChatArea, which will display your conversation with"
+				+ " see if you can find where you currently are! On the right corner of the window is the ChatArea, which will display your conversation with"
 				+ " ChatbotFX. The load button opens a file chooser for you to open and display a text file in the"
 				+ " ChatArea. The conversation is saved to a file named ChatbotFXFile.txt. Opening it will open the conversation"
 				+ " file in the ChatArea when it was last saved. The save button saves the conversation file in your workspace."

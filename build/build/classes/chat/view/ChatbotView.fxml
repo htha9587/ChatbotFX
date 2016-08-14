@@ -12,10 +12,6 @@
    <top>
       <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="spacer" stylesheets="@ChatbotStyle.css" BorderPane.alignment="CENTER">
         <items>
-            <Button fx:id="calendarButton" mnemonicParsing="false" onAction="#handleCalendarButton" text="Calendar">
-               <font>
-                  <Font size="14.0" />
-               </font></Button>
             <Button fx:id="topicListButton" mnemonicParsing="false" onAction="#handleTopicButton" prefHeight="30.0" prefWidth="93.0" text="Topic List">
                <font>
                   <Font size="14.0" />

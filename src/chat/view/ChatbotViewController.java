@@ -11,7 +11,6 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
-import com.calendarfx.view.CalendarView;
 import chat.ChatbotRunner;
 import chat.model.CTECTwitter;
 import chat.model.ChatbotModel;
@@ -42,9 +41,9 @@ import twitter4j.TwitterFactory;
 import twitter4j.User;
 
 /**
- * Version 6.7
+ * Version 6.8
  * @author htha9587
- * 8-9-16
+ * 8-14-16
  * 
  */
 
@@ -506,27 +505,27 @@ private void SaveFile(String text, File file)
 	 * Event handler for Calendar Button.
 	 * @param event
 	 */
-	@FXML
-	private void handleCalendarButton(ActionEvent event)
-	{
-		try
-		{
-			//Loads FXML file.
-		FXMLLoader loader = new FXMLLoader(ChatbotRunner.class.getResource("view/ChatbotCalendar.fxml"));
-		rootLayout2 = (BorderPane) loader.load();
-		Scene scene = new Scene(rootLayout2);
-		Stage calendarView = new Stage();
-		calendarView.setScene(scene);
-		calendarView.setTitle("Have anything planned?"); //Sets title.
-		calendarView.getIcons().add(new Image("file:resources/images/HAL.png")); //Sets Icon on the top of the window.
-	    calendarView.show();
-		}
-	catch(IOException e)
-	{
-		e.printStackTrace();
-	}
+	//@FXML
+	//private void handleCalendarButton(ActionEvent event)
+//	{
+//		try
+//		{
+//			//Loads FXML file.
+//		FXMLLoader loader = new FXMLLoader(ChatbotRunner.class.getResource("view/ChatbotCalendar.fxml"));
+//		rootLayout2 = (BorderPane) loader.load();
+//		Scene scene = new Scene(rootLayout2);
+//		Stage calendarView = new Stage();
+//		calendarView.setScene(scene);
+//		calendarView.setTitle("Have anything planned?"); //Sets title.
+//		calendarView.getIcons().add(new Image("file:resources/images/HAL.png")); //Sets Icon on the top of the window.
+//	    calendarView.show();
+//		}
+//	catch(IOException e)
+//	{
+//		e.printStackTrace();
+//	}
 		
-}
+// }
 
 	/**
 	 * Event handler for Map Button.

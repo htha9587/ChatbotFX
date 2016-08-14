@@ -5,9 +5,9 @@ import java.io.IOException;
 import java.util.Optional;
 import chat.view.ChatbotViewController;
 /**
- * Version 6.7
+ * Version 6.8
  * @author htha9587
- * 8-9-16
+ * 8-14-16
  */
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
